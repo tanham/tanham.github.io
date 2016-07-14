@@ -1,0 +1,45 @@
+---
+layout: default
+images:
+  - image_path: /images/roundtable.jpg
+    title: Roundtable
+  - image_path: /images/jazz.jpg
+    title: Jazz
+  - image_path: /images/looking_down.jpg
+    title: Looking Down
+  - image_path: /images/park_day.jpg
+    title: Park Day
+  - image_path: /images/ticket_home.jpg
+    title: Ticket Home
+  - image_path: /images/smoke_break.jpg
+    title: Smoke Break
+  - image_path: /images/work_break.jpg
+    title: Work Break
+  - image_path: /images/big_ben.jpg
+    title: Big Ben
+  - image_path: /images/love_trafalgar.jpg
+    title: Love Trafalgar
+---
+
+
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% endfor %}
+</ul>
+
+<script type="text/javascript">   
+  colorLinks("#8912FF");
+
+  function colorLinks(hexColor)
+  {
+      var links = document.getElementsByTagName("a");
+      for(var i=0;i<links.length;i++)
+      {
+          if(links[i].href)
+          {
+              links[i].style.color = hexColor;  
+          }
+      }  
+  }
+  </script>

@@ -1,0 +1,173 @@
+body { 
+  margin: 0; 
+  background: #fff;
+  padding-top: 70px;
+}
+
+.container {
+  max-width: 900px;
+  min-width: 320px;
+}
+
+/* Nav Bar */
+.navbar {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  float: none;
+}
+
+.navbar a:hover { 
+  color: black;
+ }
+.navbar-brand {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.navbar-fixed-top {
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+/* Nav Bar */
+
+.title {
+  text-align: center;
+  font-famliy: Georgia, serif;
+  font-size: 40px;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+span {
+  color: #8912FF;
+}
+
+
+.color-change {
+  color: #8912FF;
+}
+
+
+.about {
+
+ font-family: Palatino Linotype;
+ font-size: 19px; 
+
+}
+
+.about p {
+  margin-top: 10px;
+}
+
+.about img {
+
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 300px;
+}
+
+.heading { 
+  font-family: "neutra-book",Helvetica;
+  font-size: 16px;
+  color: #333;
+  font-style: italic;
+  text-align: left; 
+}
+
+
+/* footer */
+
+#contact {
+ text-align: center;
+ font-size: 30px;
+ font-family: "neutra-book",Helvetica;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 70px;
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  background-color: #eee;
+  padding-top: 60px;
+
+
+}
+
+footer a { 
+  color: black;
+ }
+
+
+ footer a:hover { 
+  text-decoration: none;
+  color: #8912FF;
+ }
+
+
+/* Now Page */
+
+.now {
+  text-align: left;
+  list-style: none;
+  font-family: Palatino Linotype;
+  font-size: 19px; 
+}
+
+.now ul {
+  list-style: circle;
+}
+
+
+
+.blog { 
+  text-align: right;
+ font-family: Palatino Linotype;
+ font-size: 16px; 
+
+ }
+
+ .blog a {
+    color: black;
+
+ }
+
+ .blog a:hover {
+  color: #8912FF;
+  text-decoration: none;
+ }
+
+.blog ul {
+  text-align: left;
+  list-style: none;
+}
+
+
+.photo-gallery, .photo-gallery li {
+  list-style: none;
+  padding: 0;
+}
+
+.photo-gallery li {
+  display: inline-block;
+  width: 33%;
+}
+
+.photo-gallery li img {
+  width: 100%;
+}
+
+
