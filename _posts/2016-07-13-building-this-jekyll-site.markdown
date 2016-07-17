@@ -5,9 +5,6 @@ date: 2016-07-13
 Category: Code
 ---
 
-# Building my Jekyll Site
-
-
 ### Inspiration 
 
 Designing and building a new website for myself was the reason that I wanted to learn to code. I was so fed up with the free resources available to me (an at the time non-techie) and I wanted to learn to make my own website. I
