@@ -95,7 +95,7 @@ span {
  font-size: 24px;
 }
 
-footer {
+.site-footer {
   font-family: "neutra-book",Helvetica;
   font-size: 14px;
   margin: auto;
@@ -112,6 +112,12 @@ footer a {
  footer a:hover { 
   text-decoration: none;
   color: #8912FF;
+ }
+
+ footer .wrapper {
+  width:900px;
+  margin: auto;
+  margin-top: 40px;
  }
 
 
