@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Building This Jekyll Site</title>
-  <meta name="description" content="This is a comprehensive record of how I build this Jekyll site from start to finish.">
+  <meta name="description" content="Inspiration">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://yourdomain.com/2016/07/13/building-this-jekyll-site.html">
@@ -21,13 +21,12 @@
 
   <body>
 
-    <div class="container">
 
     <!--add hamburber style menu for mobile-->
 
 <div class="navbar">
 
-    <nav class="navbar-default navbar-fixed-top">
+    <nav class="navbar-default">
       <div class="container">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -36,7 +35,6 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">blog</a></li>
             <li><a href="/about.html">about</a></li>
-            <li><a href="/photo-gallery.html">portfolio</a></li>
             <li><a href="/now.html">now</a></li>
 
           </ul>
@@ -59,65 +57,89 @@
   }
   </script>
 
-   
+    <div class="content">
      
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="content">
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Building This Jekyll Site</h1>
-    <p class="post-meta"><time datetime="2016-07-13T00:00:00+02:00" itemprop="datePublished">Jul 13, 2016</time></p>
-  </header>
+	  <header class="post-header">
+	    <h1 class="post-title" itemprop="name headline">Building This Jekyll Site</h1>
+	    <p class="post-meta"><time datetime="2016-07-13T00:00:00+02:00" itemprop="datePublished">Jul 13, 2016</time></p>
+	  </header>
 
-  <div class="post-content" itemprop="articleBody">
-    <p>This is a comprehensive record of how I build this Jekyll site from start to finish.</p>
+	  <div class="post-content" itemprop="articleBody">
+	    <h3 id="inspiration">Inspiration</h3>
 
-  </div>
+<p>Designing and building a new website for myself was the reason that I wanted to learn to code. I was so fed up with the free resources available to me (an at the time non-techie) and I wanted to learn to make my own website. I had no idea that I’d get so into it, but here I am.</p>
 
-</article>
+<h3 id="wire-framing">Wire framing</h3>
+
+<p>I’m new to designing websites but I know what I like. I watched a few youtube videos about wire framing, with hopes of understanding the thought processes behind design and what things to take note of in the beginning. I kept my eyes open as I perused the web for designs that I liked and then I sketched a several designs over a few days. I nixed several ideas (some that I still like) because I just wasn’t sure. While learning something new in a self-directed environment sometimes difficult to know the right way to go. At this point, many of my ideas are a remix of some of the things that I admire online.</p>
+
+<h3 id="prototyping-in-codepen">Prototyping in Codepen</h3>
+
+<p>I coded 3 iterations of my design in Codepen to prototype. I like Codepen for it’s auto preview feature. I thought it might be nice to immediately see how my code came to life - and it was. I chose to use Bootstrap and Flexbox to create my layout fast. I already feel a few limitations here…</p>
+
+<h3 id="resources">Resources</h3>
+
+<p>I had plenty help every step of the way. For wire framing I watched a video from <a href="https://www.youtube.com/watch?v=PQO47_AP6lo">DevTip</a> and bits and pieces of others to try to put myself on the right track.</p>
+
+<p><a href="http://lilchen.com/blog/site-redesign-process/">Lil Chen’s site redesign article</a> was such a big help in having a peak into how someone more experience may go about the process.</p>
+
+<p>I also read about writing clean and modular code with <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> and <a href="https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/">OOCSS</a>.</p>
+
+<p><a href="http://learnlayout.com/">Learn layout</a> was a good help for some CSS refreshers.</p>
+
+<p>Oh and <a href="http://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp">Minimum viable product</a>.</p>
+
+<p>I can’t say that I have hard fast followed any of these things I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points.</p>
+
+<h3 id="enter-jekyll">Enter Jekyll</h3>
+
+<p>I downloaded and ran jekyll for the first time with the help of their amazing documentation - https://jekyllrb.com/docs/home/. I decided to use the default Jekyll them as a starting point. I ran into several problems that I am still working out and in retrospect I should have began with a clean slate but working the kinks was a tremedous learning experience.</p>
+
+<p>To be continued…</p>
+
+	  </div>
+
+	</article>
+</div>
+
 
     
     </div>
 
      <!-- Extend footer across width of page, color, troubleshoot FA icons -->    
+      
+
       <footer>
-        <div class="col-md-6 copyright">
-          <p>This is a blog and portfolio by Tanisha Hampden. This Jekyll site was built with love, Sublime 2, and bootstrap.</p>
+          <div class="col-md-6 copyright">
+            <p>This is a blog and portfolio by Tanisha Hampden. This Jekyll site was built with love, Sublime 2, and bootstrap.</p>
 
-          <p>All Right Reserved. Copyright &copy; Tanisha Hampden 2016.</p>
+            <p>All Right Reserved. Copyright &copy; Tanisha Hampden 2016.</p>
 
-        </div>
+          </div>
 
-        <div class="col-md-6" id="contact">
-  
+          <div class="col-md-6" id="contact">
+            <a href="https://github.com/tanham21">
+              <i class="fa fa-github fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+          
+            <a href="https://twitter.com/tanishahampden">
+              <i class="fa fa-twitter fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+         
+            <a href="https://www.instagram.com/tanishahampden/">
+              <i class="fa fa-instagram fa-1x fa-border " aria-hidden="true "></i>
+            </a>
 
-        
-
-
-          <a href="https://github.com/tanham21">
-            <i class="fa fa-github fa-1x fa-border " aria-hidden="true "></i>
-          </a>
-        
-        
-          <a href="https://twitter.com/tanishahampden">
-            <i class="fa fa-twitter fa-1x fa-border " aria-hidden="true "></i>
-          </a>
-       
-
-          <a href="https://www.instagram.com/tanishahampden/">
-            <i class="fa fa-instagram fa-1x fa-border " aria-hidden="true "></i>
-          </a>
-
-       
-          <a href="https://www.linkedin.com/in/tanisha-hampden-53b74634">
-            <i class="fa fa-linkedin fa-1x fa-border " aria-hidden="true "></i>
-          </a>
-       
-
-
-          </section>
-
-
+            <a href="https://www.linkedin.com/in/tanisha-hampden-53b74634">
+              <i class="fa fa-linkedin fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+          </div>
       </footer>
+
+
 
 
 

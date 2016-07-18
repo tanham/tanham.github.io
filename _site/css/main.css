@@ -1,36 +1,41 @@
 body { 
   margin: 0; 
   background: #fff;
-  padding-top: 70px;
 }
 
-.container {
-  max-width: 900px;
+.content {
+  margin: auto;
+  max-width: 600px;
   min-width: 320px;
+  font-family: "neutra-book",Helvetica;
+  line-height: 1.8;
+  font-size: 18px;
+
 }
+
+
 
 /* Nav Bar */
 .navbar {
+  width: 100%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
   float: none;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .navbar a:hover { 
   color: black;
  }
+
 .navbar-brand {
   font-family: Georgia;
   font-style: italic;
   font-size: 30px;
-}
-
-.navbar-fixed-top {
-  font-family: Georgia;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 100;
 }
 
 
@@ -38,7 +43,7 @@ body {
 
 .title {
   text-align: center;
-  font-famliy: Georgia, serif;
+  font-family: Georgia, serif;
   font-size: 40px;
 }
 
@@ -60,9 +65,6 @@ span {
 
 
 .about {
-
- font-family: Palatino Linotype;
- font-size: 19px; 
 
 }
 
@@ -90,15 +92,16 @@ span {
 
 #contact {
  text-align: center;
- font-size: 30px;
- font-family: "neutra-book",Helvetica;
+ font-size: 24px;
 }
 
 footer {
-  text-align: center;
-  font-style: italic;
-  padding-bottom: 70px;
-  margin: 0;
+  font-family: "neutra-book",Helvetica;
+  font-size: 14px;
+  margin: auto;
+  height: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 footer a { 
@@ -117,8 +120,6 @@ footer a {
 .now {
   text-align: left;
   list-style: none;
-  font-family: Palatino Linotype;
-  font-size: 19px; 
 }
 
 .now ul {
@@ -129,9 +130,7 @@ footer a {
 
 .blog { 
   text-align: right;
- font-family: Palatino Linotype;
- font-size: 16px; 
-
+ 
  }
 
  .blog a {
@@ -141,7 +140,6 @@ footer a {
 
  .blog a:hover {
   color: #8912FF;
-  text-decoration: none;
  }
 
 .blog ul {
@@ -164,4 +162,17 @@ footer a {
   width: 100%;
 }
 
+.page-heading {
+  text-align: left;
+  font-family: "neutra-book",Helvetica;
+  
+}
 
+
+.post-link {
+  font-size: 22px;
+}
+
+.post-meta {
+  font-size: 16px;
+}

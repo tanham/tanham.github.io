@@ -7,11 +7,11 @@ Category: Code
 
 ### Inspiration 
 
-Designing and building a new website for myself was the reason that I wanted to learn to code. I was so fed up with the free resources available to me (an at the time non-techie) and I wanted to learn to make my own website. I
+Designing and building a new website for myself was the reason that I wanted to learn to code. I was so fed up with the free resources available to me (an at the time non-techie) and I wanted to learn to make my own website. I had no idea that I'd get so into it, but here I am. 
 
 ### Wire framing 
    
-I’m new to designing websites but I know what I like. I watched a few youtube videos about wire framing, with hopes of understanding the thought processes behind  design and what things to take note of in the beginning stages of coming up. I kept my eyes open as I perused the web for designs that I liked and then I sketched a several designs over a few days. Because I nixed several ideas (some that I still like) because I just wasn’t sure. The thing about learning something new
+I’m new to designing websites but I know what I like. I watched a few youtube videos about wire framing, with hopes of understanding the thought processes behind design and what things to take note of in the beginning. I kept my eyes open as I perused the web for designs that I liked and then I sketched a several designs over a few days. I nixed several ideas (some that I still like) because I just wasn’t sure. While learning something new in a self-directed environment sometimes difficult to know the right way to go. At this point, many of my ideas are a remix of some of the things that I admire online.
 
 
 ### Prototyping in Codepen
