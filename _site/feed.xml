@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jul 2016 23:03:36 +0200</pubDate>
-    <lastBuildDate>Tue, 19 Jul 2016 23:03:36 +0200</lastBuildDate>
+    <pubDate>Tue, 19 Jul 2016 23:57:33 +0200</pubDate>
+    <lastBuildDate>Tue, 19 Jul 2016 23:57:33 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -67,17 +67,20 @@
 
 &lt;h3 id=&quot;wire-framing&quot;&gt;Wire framing&lt;/h3&gt;
 
-&lt;p&gt;I’m new to designing websites but I know what I like. I watched a few youtube videos about wire framing, with hopes of understanding the thought processes behind design and what things to take note of in the beginning. I kept my eyes open as I perused the web for designs that I liked and then I sketched a several designs over a few days. I nixed several ideas (some that I still like) because I just wasn’t sure. While learning something new in a self-directed environment sometimes difficult to know the right way to go. At this point, many of my ideas are a remix of some of the things that I admire online.&lt;/p&gt;
+&lt;p&gt;I’m new to designing websites but I know what I like. I watched a few Youtube videos about wire framing, with hopes of understanding some of the thought processes behind the practice and what things to take note of in the beginning. I kept my eyes open as I perused the web for designs that I liked and then I sketched a several designs over a few days. I nixed most of my initial ideas (some that I still like) because I didn’t think I could get it to work in the browser or because they were just bad. At this point, many of my ideas are a remix of some of the things that I admire online.&lt;/p&gt;
 
 &lt;h3 id=&quot;prototyping-in-codepen&quot;&gt;Prototyping in Codepen&lt;/h3&gt;
 
-&lt;p&gt;I coded 3 iterations of my design in Codepen to prototype. I like Codepen for it’s auto preview feature. I thought it might be nice to immediately see how my code came to life - and it was. I chose to use Bootstrap and Flexbox to create my layout fast. I already feel a few limitations here…&lt;/p&gt;
+&lt;p&gt;I coded 3 iterations of my design in Codepen to prototype. I like Codepen for it’s auto preview feature. I thought it might be nice to immediately see how my code came to life - and it was. I chose to use Bootstrap to create my layout fast. Here is one iteration of the design:&lt;/p&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;vKJOzQ&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/tanham2122/pen/vKJOzQ/&quot;&gt;vKJOzQ&lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
 
-&lt;p&gt;I had plenty help every step of the way. For wire framing I watched a video from &lt;a href=&quot;https://www.youtube.com/watch?v=PQO47_AP6lo&quot;&gt;DevTip&lt;/a&gt; and bits and pieces of others to try to put myself on the right track.&lt;/p&gt;
+&lt;p&gt;I had plenty help every step of the way. For wire framing I watched a video from &lt;a href=&quot;https://www.youtube.com/watch?v=PQO47_AP6lo&quot;&gt;DevTip&lt;/a&gt; and bits and pieces from others to try to put myself on the right track.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://lilchen.com/blog/site-redesign-process/&quot;&gt;Lil Chen’s site redesign article&lt;/a&gt; was such a big help in having a peak into how someone more experience may go about the process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lilchen.com/blog/site-redesign-process/&quot;&gt;Lil Chen’s site redesign article&lt;/a&gt; was such a big help in having a peek into how someone more experienced may go about the process.&lt;/p&gt;
 
 &lt;p&gt;I also read about writing clean and modular code with &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot;&gt;BEM&lt;/a&gt; and &lt;a href=&quot;https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/&quot;&gt;OOCSS&lt;/a&gt;.&lt;/p&gt;
 
@@ -85,13 +88,16 @@
 
 &lt;p&gt;Oh and &lt;a href=&quot;http://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp&quot;&gt;Minimum viable product&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I can’t say that I have hard fast followed any of these things I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points.&lt;/p&gt;
+&lt;p&gt;I can’t say that I have hard fast followed any of these things I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points. I will say that at some point I had to stop trying to take advice and just code. The resources were great to get me started but I had to dig in before analysis paralysis set in.&lt;/p&gt;
 
 &lt;h3 id=&quot;enter-jekyll&quot;&gt;Enter Jekyll&lt;/h3&gt;
 
-&lt;p&gt;I downloaded and ran jekyll for the first time with the help of their amazing documentation - https://jekyllrb.com/docs/home/. I decided to use the default Jekyll them as a starting point. I ran into several problems that I am still working out and in retrospect I should have began with a clean slate but working the kinks was a tremedous learning experience.&lt;/p&gt;
+&lt;p&gt;I downloaded and ran Jekyll for the first time with the help of their amazing &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;documentation&lt;/a&gt;. I decided to use the default Jekyll theme as a starting point. I ran into several problems that I am still working out and in retrospect I should have began with a clean slate but working the kinks was a tremendous learning experience.&lt;/p&gt;
 
-&lt;p&gt;To be continued…&lt;/p&gt;
+&lt;p&gt;One problem that I had was using vanilla CSS instead of Sass. The default Jekyll theme comes with Sass styling. I pasted my CSS into a new file and added to the project - the Sass styling and my CSS was competing with each other. I liked some of the Sass styling but I ended up deleting the entire Sass files so I can have full control.&lt;/p&gt;
+
+&lt;p&gt;I am still learning Jekyll and I’m constantly amazed by how powerful it is. My design and overall website will continue to evolve as I learn and experiment more.&lt;/p&gt;
+
 </description>
         <pubDate>Wed, 13 Jul 2016 00:00:00 +0200</pubDate>
         <link>http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</link>
