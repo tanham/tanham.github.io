@@ -23,7 +23,7 @@ I coded 3 iterations of my design in Codepen to prototype. I like Codepen for it
 
 I had plenty help every step of the way. For wire framing I watched a video from [DevTip](https://www.youtube.com/watch?v=PQO47_AP6lo) and bits and pieces of others to try to put myself on the right track. 
 
-[Lil Chen's site redesign article](http://lilchen.com/blog/site-redesign-process/) was such a big help in having a peak into how someone more experience may go about the process. 
+[Lil Chen's site redesign article](http://lilchen.com/blog/site-redesign-process/) was such a big help in having a peek into how someone more experience may go about the process. 
 
 I also read about writing clean and modular code with [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) and [OOCSS](https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/). 
 
