@@ -6,55 +6,50 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jul 2016 23:57:33 +0200</pubDate>
-    <lastBuildDate>Tue, 19 Jul 2016 23:57:33 +0200</lastBuildDate>
+    <pubDate>Wed, 20 Jul 2016 00:50:55 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Jul 2016 00:50:55 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Code Goals</title>
-        <description>&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+        <description>&lt;p&gt;I wanted to create a public record my goals and learning strategy to hold myself accountable and to share more of my journey. I don’t know if this is the most effective way of learning but it’s my way. To help measure my progress I will keep this page active by adding links to my code and sharing adjustments that I make. Here are the 5 things that I am focusing on over the next three months:&lt;/p&gt;
 
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;h3 id=&quot;building-stuff&quot;&gt;Building stuff&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Portfolio Site&lt;/li&gt;
+  &lt;li&gt;CSS animation&lt;/li&gt;
+  &lt;li&gt;Vanilla Javascript features&lt;/li&gt;
+  &lt;li&gt;Jekyll themes&lt;/li&gt;
+  &lt;li&gt;Codepen reference pens&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;deep-learning-front-end-resources&quot;&gt;Deep Learning (Front-end Resources)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freecodecamp.com/tanham21&quot;&gt;freeCodeCamp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ecmascript.org/docs.php&quot;&gt;EMCAscript standard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/frontendmasters/front-end-handbook/details&quot;&gt;Front End Handbook pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;writing&quot;&gt;Writing&lt;/h3&gt;
+
+&lt;p&gt;I have a goal to post at least weekly to this blog. I’d like to write about things that I have learned, problems that I encounter and other tech related (and non-related) things.&lt;/p&gt;
+
+&lt;h3 id=&quot;community&quot;&gt;Community&lt;/h3&gt;
+
+&lt;p&gt;For the most part I am learning alone, just me and my computer. Because I am currently traveling, language barriers and location make it so I am rarely able to attend meetups or meet other Devs in real life. To hack this I am apart of a few online groups that focus on creating community for people like me. I am also apart of Recurse center’s &lt;a href=&quot;https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers&quot;&gt;RC start program&lt;/a&gt; so I have access to a mentor and that community.&lt;/p&gt;
+
+&lt;p&gt;I am still learning how to use this communities as resources and help wherever I can but I’d like to make this a big part of my learning and overall coding journey.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-source&quot;&gt;Open Source&lt;/h3&gt;
+
+&lt;p&gt;I am very interested in Open Source. I’ve already benefited tremendously from OSS and I would like to contribute. I believe in making technology accessible and I think it is a great way to give back to a community that has already taught me so much. Over the next three months I will pick an open source project to contribute to regularly. I will updated this post with my progress.&lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Jul 2016 00:00:00 +0200</pubDate>
         <link>http://yourdomain.com/2016/07/18/code-goals.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/18/code-goals.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Thinking About Code</title>
-        <description>&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/07/18/thinking-about-code.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/18/thinking-about-code.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Contributing to open source software</title>
-        <description>&lt;p&gt;This is another test post. I want to see what the page looks like full of posts.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 14 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://yourdomain.com/2016/07/14/contributing-to-open-source-software.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/14/contributing-to-open-source-software.html</guid>
         
         
       </item>
