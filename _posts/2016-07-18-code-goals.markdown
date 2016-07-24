@@ -14,7 +14,7 @@ I wanted to create a public record my goals and learning strategy to hold myself
 * Vanilla Javascript features
 * Jekyll themes  
 * Codepen reference pens 
-
+* [JS Rocket](https://tanham21.github.io/js-rocket/rocket.html)
 
 ### Deep Learning (Front-end Resources)
 
