@@ -6,9 +6,56 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jul 2016 01:49:13 +0200</pubDate>
-    <lastBuildDate>Wed, 20 Jul 2016 01:49:13 +0200</lastBuildDate>
+    <pubDate>Mon, 25 Jul 2016 21:17:43 +0200</pubDate>
+    <lastBuildDate>Mon, 25 Jul 2016 21:17:43 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Hacking my learning</title>
+        <description>&lt;p&gt;I had to hack my learning. Over the past few weeks, I found that I wasn’t picking up JavaScript very with fCC. I got bored with tutorials and I figured out a pattern to solving problems by imitation rather then thinking through it. I am naturally a corner cutter (a hacker even) and so without the fundamental understanding I flew through the material with patterns I picked up solving the easy stuff. This is just how I operate.&lt;/p&gt;
+
+&lt;p&gt;In addition to fCC, I tried Codecademy, reading the eloquent JavaScript book, looking at MDN and other online books and resources. Some stuff was boring and other stuff was incredibly dense.&lt;/p&gt;
+
+&lt;p&gt;I recently had an ‘aha’ moment when my RC start mentor walked me through building a JavaScript image slider using Codepen and screen-casting. As she built the slider, I listened to her talk her way through why she did things. I am comfortable with JavaScript syntax but I usually get caught up in thinking computationally. It helped so much to hear her talk through her process.&lt;/p&gt;
+
+&lt;p&gt;Are following along with a few different tutorials, I am beginning to understand what’s most important to my learning. I need a fundamental understanding of concepts and I need interactive examples.&lt;/p&gt;
+
+&lt;p&gt;I share this because everyone’s learning style is different and I having the self-awareness to learn yours can save you a lot of trouble.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Jul 2016 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</guid>
+        
+        
+        <category>code</category>
+        
+      </item>
+    
+      <item>
+        <title>Blog Test!</title>
+        <description>&lt;p&gt;This is a test.&lt;/p&gt;
+
+&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 22 Jul 2016 15:40:43 +0200</pubDate>
+        <link>http://yourdomain.com/2016/07/22/blog-test.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/07/22/blog-test.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Code Goals</title>
@@ -22,6 +69,7 @@
   &lt;li&gt;Vanilla Javascript features&lt;/li&gt;
   &lt;li&gt;Jekyll themes&lt;/li&gt;
   &lt;li&gt;Codepen reference pens&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tanham21.github.io/js-rocket/rocket.html&quot;&gt;JS Rocket&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;deep-learning-front-end-resources&quot;&gt;Deep Learning (Front-end Resources)&lt;/h3&gt;
