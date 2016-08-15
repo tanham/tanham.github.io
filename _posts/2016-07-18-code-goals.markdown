@@ -5,7 +5,7 @@ date: 2016-07-18
 Category: Code
 ---
 
-I wanted to create a public record my goals and learning strategy to hold myself accountable and to share more of my journey. I don't know if this is the most effective way of learning but it's my way. To help measure my progress I will keep this page active by adding links to my code and sharing adjustments that I make. Here are the 5 things that I am focusing on over the next three months: 
+I wanted to create a public record my goals and learning strategy to hold myself accountable and to share more of my journey. To help measure my progress I will keep this page active by adding links to my code and sharing adjustments that I make. Here are the 5 things that I am focusing on over the next three months: 
 
 ### Building stuff
 
