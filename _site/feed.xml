@@ -6,9 +6,28 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Aug 2016 12:28:49 +0100</pubDate>
-    <lastBuildDate>Mon, 15 Aug 2016 12:28:49 +0100</lastBuildDate>
+    <pubDate>Mon, 15 Aug 2016 13:33:31 +0100</pubDate>
+    <lastBuildDate>Mon, 15 Aug 2016 13:33:31 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>I Crave Community</title>
+        <description>&lt;p&gt;I crave community.&lt;/p&gt;
+
+&lt;p&gt;For the past eight months, I have been traveling all around Europe, searching for my community. I have been to England, Spain, Italy, France, and Ireland and in each place I have found what I like to call the 5-percenters. People who beleive in pursuing dreams and travel and living life as loudly as possible. People who chose not to judge based on silly things like skin color and sexual orientation. People who actually want to know who you are. It’s been transformative. I’ve learned so much about this part of the world. I have so much more to learn.&lt;/p&gt;
+
+&lt;p&gt;The most important lesson so far is that the most effective way to learn something is to surround myself with others who are just as passionate (about that something) as I am.&lt;/p&gt;
+
+&lt;p&gt;Now I am looking for my code community. I am looking for people who love to code. I’d love to find those who may look a bit different than the traditional web developer. I’d love to spend hours a day with my new code community, working out problems and coming up with new ways of doing things. I’d love to dive right into the deep end and code.&lt;/p&gt;
+
+&lt;p&gt;The search begins…&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 +0100</pubDate>
+        <link>http://yourdomain.com/2016/08/15/i-crave-community.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/08/15/i-crave-community.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Hacking my learning</title>
@@ -131,7 +150,7 @@
 
 &lt;p&gt;Oh and &lt;a href=&quot;http://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp&quot;&gt;Minimum viable product&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I can’t say that I have hard fast followed any of these things I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points. I will say that at some point I had to stop trying to take advice and just code. The resources were great to get me started but I had to dig in before analysis paralysis set in.&lt;/p&gt;
+&lt;p&gt;I can’t say that I have hard fast followed any of these things. I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points. I will say that at some point I had to stop trying to take advice and just code. The resources were great to get me started but I had to dig in before analysis paralysis set in.&lt;/p&gt;
 
 &lt;h3 id=&quot;enter-jekyll&quot;&gt;Enter Jekyll&lt;/h3&gt;
 
