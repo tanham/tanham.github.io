@@ -21,7 +21,7 @@ I wanted to create a public record my goals and learning strategy to hold myself
 	* pset 8
 	* pset 9
 * fCC projects 
-	* Random Quote Generator 
+	* [Random Quote Generator](http://codepen.io/tanham2122/pen/WxzBgE)
 	* Local Weather App
 	* Wikipedia Viewer 
 	* Twitch.tv JSON api 
