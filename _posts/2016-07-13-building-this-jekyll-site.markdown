@@ -34,7 +34,7 @@ I also read about writing clean and modular code with [BEM](http://csswizardry.c
 
 Oh and [Minimum viable product](http://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp). 
 
-I can't say that I have hard fast followed any of these things I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points. I will say that at some point I had to stop trying to take advice and just code. The resources were great to get me started but I had to dig in before analysis paralysis set in. 
+I can't say that I have hard fast followed any of these things. I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points. I will say that at some point I had to stop trying to take advice and just code. The resources were great to get me started but I had to dig in before analysis paralysis set in. 
 
 
 ### Enter Jekyll
