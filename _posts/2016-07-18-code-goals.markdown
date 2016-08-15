@@ -11,7 +11,8 @@ I wanted to create a public record my goals and learning strategy to hold myself
 
 * This portfolio site 
 * CS50 psets
-	* pset 1 - [MIT Scratch project](https://scratch.mit.edu/projects/117240207/)
+	* pset 0 - [MIT Scratch project](https://scratch.mit.edu/projects/117240207/)
+	* pset 1 - [Water](https://gist.github.com/tanham/0f614de419354df1afd946c57d480fe4), [Mario](https://gist.github.com/tanham/5cc739d58d8f3619177d8192fcbf3d19)
 	* pset 2
 	* pset 3
 	* pset 4
@@ -19,7 +20,6 @@ I wanted to create a public record my goals and learning strategy to hold myself
 	* pset 6
 	* pset 7
 	* pset 8
-	* pset 9
 * fCC projects 
 	* [Random Quote Generator](http://codepen.io/tanham2122/pen/WxzBgE)
 	* Local Weather App
