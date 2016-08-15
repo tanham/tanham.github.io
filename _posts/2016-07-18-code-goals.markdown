@@ -13,7 +13,7 @@ I wanted to create a public record my goals and learning strategy to hold myself
 * CSS animation 
 * Vanilla Javascript features
 * Jekyll themes  
-* Codepen reference pens 
+* [Codepen reference pens](http://codepen.io/collection/XRRQzY/)
 * [JS Rocket](https://tanham21.github.io/js-rocket/rocket.html)
 
 ### Deep Learning (Front-end Resources)
