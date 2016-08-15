@@ -9,7 +9,22 @@ I wanted to create a public record my goals and learning strategy to hold myself
 
 ### Building stuff
 
-* Portfolio Site 
+* This portfolio site 
+* CS50 psets
+	* pset 1 - [MIT Scratch project](https://scratch.mit.edu/projects/117240207/)
+	* pset 2
+	* pset 3
+	* pset 4
+	* pset 5
+	* pset 6
+	* pset 7
+	* pset 8
+	* pset 9
+* fCC projects 
+	* Random Quote Generator 
+	* Local Weather App
+	* Wikipedia Viewer 
+	* Twitch.tv JSON api 
 * CSS animation 
 * Vanilla Javascript features
 * Jekyll themes  
@@ -18,6 +33,7 @@ I wanted to create a public record my goals and learning strategy to hold myself
 
 ### Deep Learning (Front-end Resources)
 
+* [edX CS50](https://www.edx.org/)
 * [freeCodeCamp](https://www.freecodecamp.com/tanham21)
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/) 
 * [EMCAscript standard](http://www.ecmascript.org/docs.php)
