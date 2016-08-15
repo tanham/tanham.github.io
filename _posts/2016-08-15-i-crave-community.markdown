@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I crave community
+title: I Crave Community
 date: 2016-8-15
 category: 
 ---
