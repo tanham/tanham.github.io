@@ -5,11 +5,11 @@ date: 2016-08-29
 category: 
 ---
 
-I began learning to code about 3 months ago. I have come amazingly far from not knowing exactly what computer programming was a year ago to today. 
+I began learning to code seriously about 4 months ago. I have come amazingly far from not knowing exactly what computer programming was a year ago to today. 
 
 Here is what I would like to work on before 2016 is over
 
-# Become a Javascript Ninja
+# Become a JavaScript Ninja
 
 Right now, I know enough JavaScript to be dangerous. I can write small programs and solve simple algorithms but anything bigger and I am off in Google land trying to figure out what I have gotten myself into. Here are some of the JS projects that I have worked on so far: 
 
@@ -19,14 +19,15 @@ Right now, I know enough JavaScript to be dangerous. I can write small programs 
 * [JS Calculator]()
 * [To Do List App]()
 
-I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of Javascript and how it works while writing an absurb amount of code. By the end of the year, I would like to have confidence that I can solve most things with Javascript. 
+I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of JavaScript and how it works while writing an absurd amount of code. By the end of the year, I would like to have confidence that I can solve most things with JavaScript. 
 
 My plan of attack is simple: write code, read code, read books, and talk JS. 
 
 Goals:
+
 * Write code - write at least one JS app each week, write JS daily
-* Read code -  Periodically read Javascript code (maybe in a pair or group?)
-* Reading list - Think Like a Programmer, Eloquent Javascript, You Don't Know JS, Javascript: The Good Parts, (I am taking suggestions)
+* Read code -  Periodically read JavaScript code (maybe in a pair or group?)
+* Reading list - Think Like a Programmer, Eloquent JavaScript, You Don't Know JS, JavaScript: The Good Parts, (I am taking suggestions)
 * Talk JS - Ask questions, pontificate, teach what I know, etc. 
 
 # Build a Body of Art Work Using Code
