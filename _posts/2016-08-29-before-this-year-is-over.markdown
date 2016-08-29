@@ -35,6 +35,7 @@ Goals:
 I love art. I also love the idea using code to make art. CSS animation, image processing and other generative art fascinates me. I would like to spend time digging deeper into this kind of programming and making some of my own. 
 
 Goals: 
+
 * Create 3-5 pieces of art with code 
 * Design and program a computer game
 
