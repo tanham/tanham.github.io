@@ -48,7 +48,7 @@ I have a goal to post at least weekly to this blog. I'd like to write about thin
 
 For the most part I am learning alone, just me and my computer. Because I am currently traveling, language barriers and location make it so I am rarely able to attend meetups or meet other Devs in real life. To hack this I am apart of a few online groups that focus on creating community for people like me. I am also apart of Recurse center's [RC start program](https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers) so I have access to a mentor and that community. 
 
-I am still learning how to use this communities as resources and help wherever I can but I'd like to make this a big part of my learning and overall coding journey.  
+I am still learning how to use these communities as resources and help wherever I can but I'd like to make this a big part of my learning and overall coding journey.  
 
 ### Open Source 
 
