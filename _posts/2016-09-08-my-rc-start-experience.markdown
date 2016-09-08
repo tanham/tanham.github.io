@@ -39,7 +39,7 @@ Incidentally, I learned how to use 'ping' using the terminal because our connect
 
 Leading up to this session I wrote up my learning priorities and a list of specific questions about what I had been working on. 
 
-For most of this session we used screen sharing to walk through building a JavaScript carousel and she showed me examples of DOM Manipulation using JavaScript. This was the most helpful session up until this point. Hearing her talk through why she did certain things and about how she thought about the code solidify some of my understanding. 
+For most of this session we used screen sharing to walk through building a JavaScript carousel and she showed me examples of DOM Manipulation using JavaScript. This was the most helpful session up until this point. Hearing her talk through why she did certain things and about how she thought about the code solidified some of my understanding. 
 
 After this session I began building my own small JavaScript projects and finding real-world applications for the scripts that I was learning.  
 
