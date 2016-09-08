@@ -6,17 +6,91 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Aug 2016 11:32:47 +0100</pubDate>
-    <lastBuildDate>Mon, 29 Aug 2016 11:32:47 +0100</lastBuildDate>
+    <pubDate>Thu, 08 Sep 2016 21:27:18 +0100</pubDate>
+    <lastBuildDate>Thu, 08 Sep 2016 21:27:18 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Before this year is over</title>
-        <description>&lt;p&gt;I began learning to code about 3 months ago. I have come amazingly far from not knowing exactly what computer programming was a year ago to today.&lt;/p&gt;
+        <title>My RC Start Experience</title>
+        <description>&lt;h2 id=&quot;what-is-rc-start&quot;&gt;What is RC Start?&lt;/h2&gt;
+
+&lt;p&gt;Recurse Center describes &lt;a href=&quot;https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers&quot;&gt;RC Start&lt;/a&gt; as an experiment that offers one-on-one advice from members of the Recurse Center community. If you are selected for RC Start, you’ll get three 45-minute one-on-one sessions with an RC alum(in-person or video chat) and access to the RC Start community through a private forum (check out the link for more specifics).&lt;/p&gt;
+
+&lt;h2 id=&quot;why-did-i-apply&quot;&gt;Why did I apply?&lt;/h2&gt;
+
+&lt;p&gt;When I came across Recurse Center and RC Start, I had just started to become serious about teaching myself to code. I fell in love with RC’s mission and description of community and I immediately wanted to be apart of it. I had no previous coding background but I was eager to learn and I knew that having a mentor could help answer some of the questions that I’d been stuck on and help point me in the right direction. RC Start seemed like the perfect program from me.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-were-the-one-on-one-sessions-like&quot;&gt;What were the one-on-one sessions like?&lt;/h2&gt;
+
+&lt;p&gt;As I understand it, every RC Start experience is different based on schedules and other factors so my experience may not look like anyone else’s. Since I’ve been traveling, I was paired with a remote mentor. When I began the program I was in Italy and my mentor was based in Singapore. We had a 6-7 hour time difference the entire time but this was no problem because I was flexible and she gave me plenty of options to meet. Our sessions were a bit spaced out for scheduling reasons but also to give me time in-between to implement what we talked about and learn on my own. In between each session, my mentor sent me resources and I sent her updates on my progress.&lt;/p&gt;
+
+&lt;p&gt;We had 4 sessions total (1 intro and 3 working). Leading up to each session, I made notes about what I wanted to ask and/or work on.&lt;/p&gt;
+
+&lt;h4 id=&quot;introductory-session---june-11th-2016&quot;&gt;Introductory Session - June 11th, 2016&lt;/h4&gt;
+
+&lt;p&gt;During this first session we learned a bit about one another, talked about what I have been working on and what I wanted out of our sessions. It was a great start to our journey.&lt;/p&gt;
+
+&lt;h4 id=&quot;session-1---june-26th-2016&quot;&gt;Session 1 - June 26th, 2016&lt;/h4&gt;
+
+&lt;p&gt;During our first official session she did a code review of my portfolio code, talked about DOM manipulation, and briefly talked about making art with code. She suggested that I look into image processing and other generative art because of my photography background. She also suggested Jekyll for my portfolio and urged me to get it online using gh-pages for practice with git.&lt;/p&gt;
+
+&lt;p&gt;Incidentally, I learned how to use ‘ping’ using the terminal because our connection was lost a few times.&lt;/p&gt;
+
+&lt;h4 id=&quot;session-2---july-19-2016&quot;&gt;Session 2 - July 19, 2016&lt;/h4&gt;
+
+&lt;p&gt;Leading up to this session I wrote up my learning priorities as well as a list of questions I had.&lt;/p&gt;
+
+&lt;p&gt;For most of this session we used screen sharing to walk through building a few small JavaScript features like photo carousels. This was the most helpful session up until this point. Hearing her talk about why she did certain things about how she thought about the code made so much click for me.&lt;/p&gt;
+
+&lt;p&gt;After this session I began building my own small JavaScript projects and finding real-world applications for the scripts that I was learning.&lt;/p&gt;
+
+&lt;p&gt;In addition, we talked about:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;my newly published Jekyll site and issues I faced&lt;/li&gt;
+  &lt;li&gt;open source&lt;/li&gt;
+  &lt;li&gt;Git and Github (writing proper commit messages, git commands, etc.)&lt;/li&gt;
+  &lt;li&gt;setting up a local server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;session-3---september-6th-2016&quot;&gt;Session 3 - September 6th, 2016&lt;/h4&gt;
+
+&lt;p&gt;We pair programmed on my local weather app. With my mentor’s help, I changed 2 jQuery scripts to plain JavaScript. In the process she also showed me several debugging techniques.&lt;/p&gt;
+
+&lt;p&gt;This time, pairing showed me that I need to work on communicating more clearly (out loud and in real-time) what I am coding and what I don’t understand.&lt;/p&gt;
+
+&lt;p&gt;This was such a valuable experience and I can’t wait to pair more with other people.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The experience was overwhelmingly positive. I really loved my mentor and learned a ton from her.&lt;/p&gt;
+
+&lt;p&gt;In retrospect, I would have down a few things differently:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;been more active within the RC Start community (in the community forum)&lt;/li&gt;
+  &lt;li&gt;asked more questions in between sessions&lt;/li&gt;
+  &lt;li&gt;paired on all 3 sessions&lt;/li&gt;
+  &lt;li&gt;asked for more code reviews and specific feedback&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you are interested in RC Start or RC Retreat, check them out &lt;a href=&quot;https://www.recurse.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 08 Sep 2016 00:00:00 +0100</pubDate>
+        <link>http://yourdomain.com/2016/09/08/my-rc-start-experience.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/09/08/my-rc-start-experience.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Before This Year is Over</title>
+        <description>&lt;p&gt;I began learning to code seriously about 4 months ago. I have come amazingly far from not knowing exactly what computer programming was a year ago to today.&lt;/p&gt;
 
 &lt;p&gt;Here is what I would like to work on before 2016 is over&lt;/p&gt;
 
-&lt;h1 id=&quot;i-want-to-be-a-javascript-ninja&quot;&gt;I want to be a Javascript ninja&lt;/h1&gt;
+&lt;h1 id=&quot;become-a-javascript-ninja&quot;&gt;Become a JavaScript Ninja&lt;/h1&gt;
 
 &lt;p&gt;Right now, I know enough JavaScript to be dangerous. I can write small programs and solve simple algorithms but anything bigger and I am off in Google land trying to figure out what I have gotten myself into. Here are some of the JS projects that I have worked on so far:&lt;/p&gt;
 
@@ -28,31 +102,37 @@
   &lt;li&gt;&lt;a href=&quot;&quot;&gt;To Do List App&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of Javascript and how it works while writing an absurb amount of code. By the end of the year, I would like to have confidence that I can solve most things with Javascript.&lt;/p&gt;
+&lt;p&gt;I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of JavaScript and how it works while writing an absurd amount of code. By the end of the year, I would like to have confidence that I can solve most things with JavaScript.&lt;/p&gt;
 
 &lt;p&gt;My plan of attack is simple: write code, read code, read books, and talk JS.&lt;/p&gt;
 
-&lt;p&gt;Goals
-* Write code - write at least one JS app each week, write JS daily
-* Read code -  Periodically read Javascript code (maybe in a pair or group?)
-* Reading list - Think Like a Programmer, Eloquent Javascript, You Don’t Know JS, Javascript: The Good Parts, (I am taking suggestions)
-* Talk JS - Ask questions, pontificate, teach what I know, etc.&lt;/p&gt;
+&lt;p&gt;Goals:&lt;/p&gt;
 
-&lt;h1 id=&quot;i-want-to-build-a-body-of-art-work-using-code&quot;&gt;I want to build a body of art work using code&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Write code - write at least one JS app each week, write JS daily&lt;/li&gt;
+  &lt;li&gt;Read code -  Periodically read JavaScript code (maybe in a pair or group?)&lt;/li&gt;
+  &lt;li&gt;Reading list - Think Like a Programmer, Eloquent JavaScript, You Don’t Know JS, JavaScript: The Good Parts, (I am taking suggestions)&lt;/li&gt;
+  &lt;li&gt;Talk JS - Ask questions, pontificate, teach what I know, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;build-a-body-of-art-work-using-code&quot;&gt;Build a Body of Art Work Using Code&lt;/h1&gt;
 
 &lt;p&gt;I love art. I also love the idea using code to make art. CSS animation, image processing and other generative art fascinates me. I would like to spend time digging deeper into this kind of programming and making some of my own.&lt;/p&gt;
 
-&lt;p&gt;Goals: 
-* Create 3-5 pieces of art with code 
-* Design and program a computer game&lt;/p&gt;
+&lt;p&gt;Goals:&lt;/p&gt;
 
-&lt;h1 id=&quot;build-an-app&quot;&gt;Build an app&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create 3-5 pieces of art with code&lt;/li&gt;
+  &lt;li&gt;Design and program a computer game&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;build-an-app&quot;&gt;Build an App&lt;/h1&gt;
 
 &lt;p&gt;I would like to build an app keeps tracks of several kinds personal data in one place(i.e health metrics, finances, daily log, stress levels, food intake, etc.). On any given day, I would like to be able to analyze any week’s or month’s personal data to find areas of self-improvement.&lt;/p&gt;
 
 &lt;p&gt;This is an extension of a self-experiment that I have been working on for some time. When I put all the important metrics in one place, I always find ways I can improve my quality of life so I would like to use software to help.&lt;/p&gt;
 
-&lt;h1 id=&quot;i-would-also-like-to&quot;&gt;I would also like to:&lt;/h1&gt;
+&lt;h1 id=&quot;also&quot;&gt;Also:&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;find a community&lt;/li&gt;
