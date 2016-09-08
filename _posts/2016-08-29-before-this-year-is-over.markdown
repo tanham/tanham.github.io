@@ -41,7 +41,7 @@ Goals:
 
 # Build an App
 
-I would like to build an app keeps tracks of several kinds personal data in one place(i.e health metrics, finances, daily log, stress levels, food intake, etc.). On any given day, I would like to be able to analyze any week's or month's personal data to find areas of self-improvement.
+I would like to build an app that keeps tracks of several kinds personal data in one place(i.e health metrics, finances, daily log, stress levels, food intake, etc.). On any given day, I would like to be able to analyze any week's or month's personal data to find areas of self-improvement.
 
 This is an extension of a self-experiment that I have been working on for some time. When I put all the important metrics in one place, I always find ways I can improve my quality of life so I would like to use software to help. 
 
