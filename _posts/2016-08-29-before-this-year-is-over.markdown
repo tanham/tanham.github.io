@@ -16,8 +16,8 @@ Right now, I know enough JavaScript to be dangerous. I can write small programs 
 * [JS Rocket](https://tanham.github.io/js-rocket/rocket.html) 
 * [Random Quote Generator](http://codepen.io/tanham2122/pen/WxzBgE)
 * [Local Weather app](http://codepen.io/tanham2122/pen/kXJQzK)
-* [JS Calculator]()
-* [To Do List App]()
+* JS Calculator
+* To Do List App
 
 I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of JavaScript and how it works while writing an absurd amount of code. By the end of the year, I would like to have confidence that I can solve most things with JavaScript. 
 
