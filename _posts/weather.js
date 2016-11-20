@@ -65,40 +65,6 @@ $('input[type=radio][name=farenheit-celcius]').change(Unit);
 $(document).ready(getLocation);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var apikey = "d5706b02c8e2e5793cf3ebff8322d845";
 
 loadJSON("http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=d5706b02c8e2e5793cf3ebff8322d845&units=imperial", gotData);
