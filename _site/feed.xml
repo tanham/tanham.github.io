@@ -6,15 +6,48 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Sep 2016 21:27:18 +0100</pubDate>
-    <lastBuildDate>Thu, 08 Sep 2016 21:27:18 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 16:57:19 +0700</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 16:57:19 +0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Building A Wikipedia Viewer</title>
+        <description>&lt;h1 id=&quot;what-i-learned-from-building-a-wikipedia-viewer-in-vanilla-javascript&quot;&gt;What I learned from building a Wikipedia Viewer in Vanilla Javascript&lt;/h1&gt;
+
+&lt;p&gt;This is not at all a tutorial but a reflection of the things that I learned and the problems I faced while building a Wikipedia viewer.&lt;/p&gt;
+
+&lt;h3 id=&quot;event-handlers&quot;&gt;Event Handlers&lt;/h3&gt;
+
+&lt;p&gt;Somehow I got into the habit of adding &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; events to html files. This works fine but my mentor mentioned that it’s better practice to keep all of your Javascript self-contained to make debugging easier.&lt;/p&gt;
+
+&lt;p&gt;While rewriting the functions that required an &lt;code class=&quot;highlighter-rouge&quot;&gt;addEventListener&lt;/code&gt; object I ran into the error below:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;error: Cannot read property &#39;addEventListener&#39; of null&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I found that the function return &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt; because it executed before the DOM was fully loaded. I fixed this problem by adding &lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/API/GlobalEventHandlers/onload&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;window.onload&lt;/code&gt;&lt;/a&gt;. MDN notes that “The &lt;strong&gt;load event&lt;/strong&gt; fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links and sub-frames have finished loading.”&lt;/p&gt;
+
+&lt;h3 id=&quot;scope&quot;&gt;Scope&lt;/h3&gt;
+
+&lt;p&gt;I was reminded a few times of the importance of understanding scope and how it can affect your code structure.&lt;/p&gt;
+
+&lt;h3 id=&quot;cors&quot;&gt;CORS&lt;/h3&gt;
+
+&lt;p&gt;This was my biggest hurdle throughout this project. I spent several days reading about cross-origin resource sharing and trying several known hacks to enable CORS from the client side. I tried to manually [set request headers]((CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) within my xhr request, I tried to make my request using the &lt;a href=&quot;https://plainjs.com/javascript/ajax/jsonp-ajax-requests-50/&quot;&gt;JSONP&lt;/a&gt; method, and I even attempted to add CORS support from the server side. In the end, solving the problem was specific to the Wikipedia Api and if I would have read the docs a bit more carefully I could have saved myself several days of headache. I am happy that I got such an in-depth lesson on how CORS works. I will also ALWAYS read the docs thoroughly from now on.&lt;/p&gt;
+
+&lt;p&gt;To conclude, I probably spent more time than necessary banging my head up against the wall instead of just asking for help but I don’t think I will run into any of these problems in this manner again.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Dec 2016 00:00:00 +0700</pubDate>
+        <link>http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>My RC Start Experience</title>
         <description>&lt;h2 id=&quot;what-is-rc-start&quot;&gt;What is RC Start?&lt;/h2&gt;
 
-&lt;p&gt;Recurse Center describes &lt;a href=&quot;https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers&quot;&gt;RC Start&lt;/a&gt; as an experiment that offers one-on-one advice from members of the Recurse Center community. If you are selected for RC Start, you’ll get three 45-minute one-on-one sessions with an RC alum(in-person or video chat) and access to the RC Start community through a private forum (check out the link for more specifics).&lt;/p&gt;
+&lt;p&gt;Recurse Center describes &lt;a href=&quot;https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers&quot;&gt;RC Start&lt;/a&gt; as an experiment that “offers one-on-one advice from members of the Recurse Center community”. If you are selected for RC Start, you’ll get three 45-minute one-on-one sessions with an RC alum(in-person or video chat) and access to the RC Start community through a private forum (check out the link for more specifics).&lt;/p&gt;
 
 &lt;h2 id=&quot;why-did-i-apply&quot;&gt;Why did I apply?&lt;/h2&gt;
 
@@ -22,9 +55,9 @@
 
 &lt;h2 id=&quot;what-were-the-one-on-one-sessions-like&quot;&gt;What were the one-on-one sessions like?&lt;/h2&gt;
 
-&lt;p&gt;As I understand it, every RC Start experience is different based on schedules and other factors so my experience may not look like anyone else’s. Since I’ve been traveling, I was paired with a remote mentor. When I began the program I was in Italy and my mentor was based in Singapore. We had a 6-7 hour time difference the entire time but this was no problem because I was flexible and she gave me plenty of options to meet. Our sessions were a bit spaced out for scheduling reasons but also to give me time in-between to implement what we talked about and learn on my own. In between each session, my mentor sent me resources and I sent her updates on my progress.&lt;/p&gt;
+&lt;p&gt;As I understand it, every RC Start experience is different based on schedules and other factors so my experience may not look like anyone else’s. Because I’ve been nomadic, I was paired with a remote mentor. When I began the program I was in Italy and my mentor was based in Singapore. Throughout the program, I went from Italy to France to Ireland so we always had a 6 or 7 hour time difference. This was not a  problem because I was flexible and she gave me plenty of options to meet. Our sessions were a bit spaced out for scheduling reasons but also to give me time in-between to implement what we talked about and learn on my own. In between each session, my mentor sent me resources and I sent her updates on my progress.&lt;/p&gt;
 
-&lt;p&gt;We had 4 sessions total (1 intro and 3 working). Leading up to each session, I made notes about what I wanted to ask and/or work on.&lt;/p&gt;
+&lt;p&gt;We had 4 sessions total (1 intro and 3 official). Leading up to each session, I made notes about what I wanted to ask and/or work on.&lt;/p&gt;
 
 &lt;h4 id=&quot;introductory-session---june-11th-2016&quot;&gt;Introductory Session - June 11th, 2016&lt;/h4&gt;
 
@@ -38,16 +71,16 @@
 
 &lt;h4 id=&quot;session-2---july-19-2016&quot;&gt;Session 2 - July 19, 2016&lt;/h4&gt;
 
-&lt;p&gt;Leading up to this session I wrote up my learning priorities as well as a list of questions I had.&lt;/p&gt;
+&lt;p&gt;Leading up to this session I wrote up my learning priorities and a list of specific questions about what I had been working on.&lt;/p&gt;
 
-&lt;p&gt;For most of this session we used screen sharing to walk through building a few small JavaScript features like photo carousels. This was the most helpful session up until this point. Hearing her talk about why she did certain things about how she thought about the code made so much click for me.&lt;/p&gt;
+&lt;p&gt;For most of this session we used screen sharing to walk through building a JavaScript carousel and she showed me examples of DOM Manipulation using JavaScript. This was the most helpful session up until this point. Hearing her talk through why she did certain things and about how she thought about the code solidified some of my understanding.&lt;/p&gt;
 
 &lt;p&gt;After this session I began building my own small JavaScript projects and finding real-world applications for the scripts that I was learning.&lt;/p&gt;
 
 &lt;p&gt;In addition, we talked about:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;my newly published Jekyll site and issues I faced&lt;/li&gt;
+  &lt;li&gt;my newly published Jekyll site and issues I had faced&lt;/li&gt;
   &lt;li&gt;open source&lt;/li&gt;
   &lt;li&gt;Git and Github (writing proper commit messages, git commands, etc.)&lt;/li&gt;
   &lt;li&gt;setting up a local server&lt;/li&gt;
@@ -55,9 +88,9 @@
 
 &lt;h4 id=&quot;session-3---september-6th-2016&quot;&gt;Session 3 - September 6th, 2016&lt;/h4&gt;
 
-&lt;p&gt;We pair programmed on my local weather app. With my mentor’s help, I changed 2 jQuery scripts to plain JavaScript. In the process she also showed me several debugging techniques.&lt;/p&gt;
+&lt;p&gt;During our final session, we pair programmed on my local weather app. With my mentor’s help, I changed 2 jQuery scripts to plain JavaScript. In the process she also showed me several debugging techniques.&lt;/p&gt;
 
-&lt;p&gt;This time, pairing showed me that I need to work on communicating more clearly (out loud and in real-time) what I am coding and what I don’t understand.&lt;/p&gt;
+&lt;p&gt;This time, pairing showed me that I need to work on communicating more clearly (out loud and in real-time) what I am coding and what I don’t understand. This skill is necessary when working in groups.&lt;/p&gt;
 
 &lt;p&gt;This was such a valuable experience and I can’t wait to pair more with other people.&lt;/p&gt;
 
@@ -77,7 +110,7 @@
 &lt;p&gt;If you are interested in RC Start or RC Retreat, check them out &lt;a href=&quot;https://www.recurse.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 08 Sep 2016 00:00:00 +0100</pubDate>
+        <pubDate>Thu, 08 Sep 2016 00:00:00 +0700</pubDate>
         <link>http://yourdomain.com/2016/09/08/my-rc-start-experience.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/09/08/my-rc-start-experience.html</guid>
         
@@ -98,8 +131,8 @@
   &lt;li&gt;&lt;a href=&quot;https://tanham.github.io/js-rocket/rocket.html&quot;&gt;JS Rocket&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://codepen.io/tanham2122/pen/WxzBgE&quot;&gt;Random Quote Generator&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://codepen.io/tanham2122/pen/kXJQzK&quot;&gt;Local Weather app&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;JS Calculator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;To Do List App&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;JS Calculator&lt;/li&gt;
+  &lt;li&gt;To Do List App&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of JavaScript and how it works while writing an absurd amount of code. By the end of the year, I would like to have confidence that I can solve most things with JavaScript.&lt;/p&gt;
@@ -128,7 +161,7 @@
 
 &lt;h1 id=&quot;build-an-app&quot;&gt;Build an App&lt;/h1&gt;
 
-&lt;p&gt;I would like to build an app keeps tracks of several kinds personal data in one place(i.e health metrics, finances, daily log, stress levels, food intake, etc.). On any given day, I would like to be able to analyze any week’s or month’s personal data to find areas of self-improvement.&lt;/p&gt;
+&lt;p&gt;I would like to build an app that keeps tracks of several kinds personal data in one place(i.e health metrics, finances, daily log, stress levels, food intake, etc.). On any given day, I would like to be able to analyze any week’s or month’s personal data to find areas of self-improvement.&lt;/p&gt;
 
 &lt;p&gt;This is an extension of a self-experiment that I have been working on for some time. When I put all the important metrics in one place, I always find ways I can improve my quality of life so I would like to use software to help.&lt;/p&gt;
 
@@ -141,7 +174,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 29 Aug 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 +0700</pubDate>
         <link>http://yourdomain.com/2016/08/29/before-this-year-is-over.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/29/before-this-year-is-over.html</guid>
         
@@ -160,7 +193,7 @@
 
 &lt;p&gt;The search begins…&lt;/p&gt;
 </description>
-        <pubDate>Mon, 15 Aug 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 +0700</pubDate>
         <link>http://yourdomain.com/2016/08/15/i-crave-community.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/15/i-crave-community.html</guid>
         
@@ -179,7 +212,7 @@
 
 &lt;p&gt;I think the right amount of community and self awareness pertaining to one’s learning style can save a ton of time and trouble learning.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 25 Jul 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 25 Jul 2016 00:00:00 +0700</pubDate>
         <link>http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</link>
         <guid isPermaLink="true">http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</guid>
         
@@ -207,7 +240,7 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 22 Jul 2016 14:40:43 +0100</pubDate>
+        <pubDate>Fri, 22 Jul 2016 20:40:43 +0700</pubDate>
         <link>http://yourdomain.com/2016/07/22/blog-test.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/22/blog-test.html</guid>
         
@@ -274,7 +307,7 @@
 
 &lt;p&gt;I am very interested in Open Source. I’ve already benefited tremendously from OSS and I would like to contribute. I believe in making technology accessible and I think it is a great way to give back to a community that has already taught me so much. Over the next three months I will pick an open source project to contribute to regularly. I will updated this post with my progress.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 18 Jul 2016 00:00:00 +0700</pubDate>
         <link>http://yourdomain.com/2016/07/18/code-goals.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/18/code-goals.html</guid>
         
@@ -321,7 +354,7 @@
 &lt;p&gt;I am still learning Jekyll and I’m constantly amazed by how powerful it is. My design and overall website will continue to evolve as I learn and experiment more.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 13 Jul 2016 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 13 Jul 2016 00:00:00 +0700</pubDate>
         <link>http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</guid>
         

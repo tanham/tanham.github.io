@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Before This Year is Over</title>
-  <meta name="description" content="I began learning to code seriously about 4 months ago. I have come amazingly far from not knowing exactly what computer programming was a year ago to today.">
+  <title>Building A Wikipedia Viewer</title>
+  <meta name="description" content="What I learned from building a Wikipedia Viewer in Vanilla Javascript">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/2016/08/29/before-this-year-is-over.html">
+  <link rel="canonical" href="http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html">
   <link rel="alternate" type="application/rss+xml" title="Tanisha Hampden" href="http://yourdomain.com/feed.xml">
   <!--Bootstrap-->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -63,65 +63,34 @@
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 	  <header class="post-header">
-	    <h1 class="post-title" itemprop="name headline">Before This Year is Over</h1>
-	    <p class="post-meta"><time datetime="2016-08-29T00:00:00+07:00" itemprop="datePublished">Aug 29, 2016</time></p>
+	    <h1 class="post-title" itemprop="name headline">Building A Wikipedia Viewer</h1>
+	    <p class="post-meta"><time datetime="2016-12-07T00:00:00+07:00" itemprop="datePublished">Dec 7, 2016</time></p>
 	  </header>
 <hr>
 	  <div class="post-content" itemprop="articleBody">
-	    <p>I began learning to code seriously about 4 months ago. I have come amazingly far from not knowing exactly what computer programming was a year ago to today.</p>
+	    <h1 id="what-i-learned-from-building-a-wikipedia-viewer-in-vanilla-javascript">What I learned from building a Wikipedia Viewer in Vanilla Javascript</h1>
 
-<p>Here is what I would like to work on before 2016 is over</p>
+<p>This is not at all a tutorial but a reflection of the things that I learned and the problems I faced while building a Wikipedia viewer.</p>
 
-<h1 id="become-a-javascript-ninja">Become a JavaScript Ninja</h1>
+<h3 id="event-handlers">Event Handlers</h3>
 
-<p>Right now, I know enough JavaScript to be dangerous. I can write small programs and solve simple algorithms but anything bigger and I am off in Google land trying to figure out what I have gotten myself into. Here are some of the JS projects that I have worked on so far:</p>
+<p>Somehow I got into the habit of adding <code class="highlighter-rouge">onclick</code> events to html files. This works fine but my mentor mentioned that it’s better practice to keep all of your Javascript self-contained to make debugging easier.</p>
 
-<ul>
-  <li><a href="https://tanham.github.io/js-rocket/rocket.html">JS Rocket</a></li>
-  <li><a href="http://codepen.io/tanham2122/pen/WxzBgE">Random Quote Generator</a></li>
-  <li><a href="http://codepen.io/tanham2122/pen/kXJQzK">Local Weather app</a></li>
-  <li>JS Calculator</li>
-  <li>To Do List App</li>
-</ul>
+<p>While rewriting the functions that required an <code class="highlighter-rouge">addEventListener</code> object I ran into the error below:</p>
 
-<p>I realize that a few months is not enough time to become a JS expert but I plan to deeply study the fundamentals of JavaScript and how it works while writing an absurd amount of code. By the end of the year, I would like to have confidence that I can solve most things with JavaScript.</p>
+<p><code class="highlighter-rouge">error: Cannot read property 'addEventListener' of null</code></p>
 
-<p>My plan of attack is simple: write code, read code, read books, and talk JS.</p>
+<p>I found that the function return <code class="highlighter-rouge">null</code> because it executed before the DOM was fully loaded. I fixed this problem by adding <a href="https://developer.mozilla.org/en/docs/Web/API/GlobalEventHandlers/onload"><code class="highlighter-rouge">window.onload</code></a>. MDN notes that “The <strong>load event</strong> fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links and sub-frames have finished loading.”</p>
 
-<p>Goals:</p>
+<h3 id="scope">Scope</h3>
 
-<ul>
-  <li>Write code - write at least one JS app each week, write JS daily</li>
-  <li>Read code -  Periodically read JavaScript code (maybe in a pair or group?)</li>
-  <li>Reading list - Think Like a Programmer, Eloquent JavaScript, You Don’t Know JS, JavaScript: The Good Parts, (I am taking suggestions)</li>
-  <li>Talk JS - Ask questions, pontificate, teach what I know, etc.</li>
-</ul>
+<p>I was reminded a few times of the importance of understanding scope and how it can affect your code structure.</p>
 
-<h1 id="build-a-body-of-art-work-using-code">Build a Body of Art Work Using Code</h1>
+<h3 id="cors">CORS</h3>
 
-<p>I love art. I also love the idea using code to make art. CSS animation, image processing and other generative art fascinates me. I would like to spend time digging deeper into this kind of programming and making some of my own.</p>
+<p>This was my biggest hurdle throughout this project. I spent several days reading about cross-origin resource sharing and trying several known hacks to enable CORS from the client side. I tried to manually [set request headers]((CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) within my xhr request, I tried to make my request using the <a href="https://plainjs.com/javascript/ajax/jsonp-ajax-requests-50/">JSONP</a> method, and I even attempted to add CORS support from the server side. In the end, solving the problem was specific to the Wikipedia Api and if I would have read the docs a bit more carefully I could have saved myself several days of headache. I am happy that I got such an in-depth lesson on how CORS works. I will also ALWAYS read the docs thoroughly from now on.</p>
 
-<p>Goals:</p>
-
-<ul>
-  <li>Create 3-5 pieces of art with code</li>
-  <li>Design and program a computer game</li>
-</ul>
-
-<h1 id="build-an-app">Build an App</h1>
-
-<p>I would like to build an app that keeps tracks of several kinds personal data in one place(i.e health metrics, finances, daily log, stress levels, food intake, etc.). On any given day, I would like to be able to analyze any week’s or month’s personal data to find areas of self-improvement.</p>
-
-<p>This is an extension of a self-experiment that I have been working on for some time. When I put all the important metrics in one place, I always find ways I can improve my quality of life so I would like to use software to help.</p>
-
-<h1 id="also">Also:</h1>
-
-<ul>
-  <li>find a community</li>
-  <li>contribute to Open Source</li>
-  <li>feel confident when introducing myself as a web developer</li>
-</ul>
-
+<p>To conclude, I probably spent more time than necessary banging my head up against the wall instead of just asking for help but I don’t think I will run into any of these problems in this manner again.</p>
 
 	  </div>
 

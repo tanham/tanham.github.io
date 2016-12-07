@@ -24,7 +24,7 @@ body {
   float: none;
   font-family: Georgia;
   font-size: 20px;
-  font-style: italic;
+  /*font-style: italic;*/
   font-weight: 100;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .navbar-brand {
   font-family: Georgia;
-  font-style: italic;
+  /*font-style: italic;*/x
   font-size: 30px;
 }
 
@@ -51,7 +51,7 @@ body {
   text-align: center;
   font-family: Georgia, serif;
   font-size: 20px;
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 span {
@@ -83,7 +83,7 @@ span {
   font-family: "neutra-book",Helvetica;
   font-size: 16px;
   color: #333;
-  font-style: italic;
+  /*font-style: italic;*/
   text-align: left; 
 }
 
