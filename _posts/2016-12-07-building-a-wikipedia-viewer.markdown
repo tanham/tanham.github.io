@@ -1,11 +1,11 @@
 ---
 layout: post
-Title: "Building a Wikipedia Viewer in Vanilla Javascript"
+Title: "Building a Wikipedia Viewer"
 date: 2016-12-07
 Category: Code
 ---
 
-# What I learned from building a Wikipedia Viewer in Vanilla Javascript
+# What I learned from building a Wikipedia Viewer
 
 This is not at all a tutorial but a reflection of the things that I learned and the problems I faced while building a Wikipedia viewer. 
 
