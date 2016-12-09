@@ -6,13 +6,13 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 17:16:18 +0700</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 17:16:18 +0700</lastBuildDate>
+    <pubDate>Fri, 09 Dec 2016 14:46:24 +0700</pubDate>
+    <lastBuildDate>Fri, 09 Dec 2016 14:46:24 +0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Building A Wikipedia Viewer</title>
-        <description>&lt;h1 id=&quot;what-i-learned-from-building-a-wikipedia-viewer-in-vanilla-javascript&quot;&gt;What I learned from building a Wikipedia Viewer in Vanilla Javascript&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;what-i-learned-from-building-a-wikipedia-viewer&quot;&gt;What I learned from building a Wikipedia Viewer&lt;/h1&gt;
 
 &lt;p&gt;This is not at all a tutorial but a reflection of the things that I learned and the problems I faced while building a Wikipedia viewer.&lt;/p&gt;
 
@@ -34,7 +34,7 @@
 
 &lt;h3 id=&quot;cors&quot;&gt;CORS&lt;/h3&gt;
 
-&lt;p&gt;This was my biggest hurdle throughout this project. I spent several days reading about cross-origin resource sharing and trying several known hacks to enable CORS from the client side. I tried to manually &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS&quot;&gt;set request headers&lt;/a&gt; within my xhr request, I tried to make my request using the &lt;a href=&quot;https://plainjs.com/javascript/ajax/jsonp-ajax-requests-50/&quot;&gt;JSONP&lt;/a&gt; method, and I even attempted to add CORS support from the server side. In the end, solving the problem was specific to the Wikipedia API and if I would have read the docs a bit more carefully I could have saved myself several days of headache. I am happy that I got such an in-depth lesson on how CORS works. I will also &lt;em&gt;ALWAYS&lt;/em&gt; read the docs thoroughly from now on.&lt;/p&gt;
+&lt;p&gt;This was my biggest hurdle throughout this project. I spent several days reading about cross-origin resource sharing and trying several known hacks to enable CORS from the client side. I tried to manually &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;setRequestHeaders&lt;/code&gt;&lt;/a&gt; within my xhr request, I tried to make my request using the &lt;a href=&quot;https://plainjs.com/javascript/ajax/jsonp-ajax-requests-50/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JSONP&lt;/code&gt;&lt;/a&gt; method, and I even attempted to add CORS support from the server side. In the end, solving the problem was specific to the Wikipedia API and if I would have read the docs a bit more carefully I could have saved myself several days of headache. I am happy that I got such an in-depth lesson on how CORS works. I will also &lt;em&gt;ALWAYS&lt;/em&gt; read the docs thoroughly from now on.&lt;/p&gt;
 
 &lt;p&gt;To conclude, I probably spent more time than necessary banging my head up against the wall instead of just asking for help but I don’t think I will run into any of these problems in this manner again.&lt;/p&gt;
 
