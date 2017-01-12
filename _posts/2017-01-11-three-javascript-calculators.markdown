@@ -6,7 +6,7 @@ Category: Project 52
 ---
 
 
-*Project 52 - My bestfriend and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. **This is week 1**.* 
+*Project 52 - My good friend [Desmond](http://designxdesmond.com/) and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. **This is week 1**.* 
 
 ***
 
