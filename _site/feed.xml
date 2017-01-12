@@ -6,9 +6,50 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Dec 2016 15:05:22 +0700</pubDate>
-    <lastBuildDate>Fri, 09 Dec 2016 15:05:22 +0700</lastBuildDate>
+    <pubDate>Wed, 11 Jan 2017 19:19:57 -0500</pubDate>
+    <lastBuildDate>Wed, 11 Jan 2017 19:19:57 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Three Javascript Calculators</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My bestfriend and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 1&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;implemations-of-a-simple-js-calcuator&quot;&gt;3 Implemations of a simple JS Calcuator&lt;/h3&gt;
+
+&lt;h4 id=&quot;simple-js-calc-1&quot;&gt;Simple JS Calc 1&lt;/h4&gt;
+
+&lt;p&gt;The simplest possible implementation I could think of was to include two input fields and the four operands buttons. The result comes up in an alert dialog box. Each input and operand has a function that is triggered in an &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; event. The code is self-contained in one document.&lt;/p&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;QdNKWa&quot; data-default-tab=&quot;result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Simple JS Calculator 1 &quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/tanham2122/pen/QdNKWa/&quot;&gt;Simple JS Calculator 1 &lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;simple-js-calc-2&quot;&gt;Simple JS Calc 2&lt;/h4&gt;
+
+&lt;p&gt;The next calculator uses a html form and only one JavaScript function. This calculator looks nicer to the user but the code is very ugly as it is also self-contained in one HTML document. This calulator also uses &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; events to fire a function.&lt;/p&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;xgVEGo&quot; data-default-tab=&quot;result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Simple JS Calculator 2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/tanham2122/pen/xgVEGo/&quot;&gt;Simple JS Calculator 2&lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;simple-js-calc-3&quot;&gt;Simple JS Calc 3&lt;/h4&gt;
+
+&lt;p&gt;This is the best and most programatic version of the calulator I have so far. The code is clean and the interface looks good. (I found a calulator design online and tweaked in to my liking).&lt;/p&gt;
+
+&lt;p&gt;I loop through the buttons to add an &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; event for each. Within the loop there is a &lt;code class=&quot;highlighter-rouge&quot;&gt;switch&lt;/code&gt; that states the possibly cases and triggers a function based on what cases is being clicked.&lt;/p&gt;
+
+&lt;p&gt;There is one bug that I know of so far. Once an equation is calucated, you can continue to add number to the result. I will keep working on this.&lt;/p&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;pRyEEO&quot; data-default-tab=&quot;result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Simple JS Calculator 3 &quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/tanham2122/pen/pRyEEO/&quot;&gt;Simple JS Calculator 3 &lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/2017/01/11/three-javascript-calculators.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/01/11/three-javascript-calculators.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Building A Wikipedia Viewer</title>
@@ -46,7 +87,7 @@
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 </description>
-        <pubDate>Wed, 07 Dec 2016 00:00:00 +0700</pubDate>
+        <pubDate>Wed, 07 Dec 2016 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</guid>
         
@@ -120,7 +161,7 @@
 &lt;p&gt;If you are interested in RC Start or RC Retreat, check them out &lt;a href=&quot;https://www.recurse.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 08 Sep 2016 00:00:00 +0700</pubDate>
+        <pubDate>Thu, 08 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/09/08/my-rc-start-experience.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/09/08/my-rc-start-experience.html</guid>
         
@@ -184,7 +225,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 29 Aug 2016 00:00:00 +0700</pubDate>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/08/29/before-this-year-is-over.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/29/before-this-year-is-over.html</guid>
         
@@ -203,7 +244,7 @@
 
 &lt;p&gt;The search begins…&lt;/p&gt;
 </description>
-        <pubDate>Mon, 15 Aug 2016 00:00:00 +0700</pubDate>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/08/15/i-crave-community.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/15/i-crave-community.html</guid>
         
@@ -222,7 +263,7 @@
 
 &lt;p&gt;I think the right amount of community and self awareness pertaining to one’s learning style can save a ton of time and trouble learning.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 25 Jul 2016 00:00:00 +0700</pubDate>
+        <pubDate>Mon, 25 Jul 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</link>
         <guid isPermaLink="true">http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</guid>
         
@@ -250,7 +291,7 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 22 Jul 2016 20:40:43 +0700</pubDate>
+        <pubDate>Fri, 22 Jul 2016 09:40:43 -0400</pubDate>
         <link>http://yourdomain.com/2016/07/22/blog-test.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/22/blog-test.html</guid>
         
@@ -317,7 +358,7 @@
 
 &lt;p&gt;I am very interested in Open Source. I’ve already benefited tremendously from OSS and I would like to contribute. I believe in making technology accessible and I think it is a great way to give back to a community that has already taught me so much. Over the next three months I will pick an open source project to contribute to regularly. I will updated this post with my progress.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 +0700</pubDate>
+        <pubDate>Mon, 18 Jul 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/07/18/code-goals.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/18/code-goals.html</guid>
         
@@ -364,7 +405,7 @@
 &lt;p&gt;I am still learning Jekyll and I’m constantly amazed by how powerful it is. My design and overall website will continue to evolve as I learn and experiment more.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 13 Jul 2016 00:00:00 +0700</pubDate>
+        <pubDate>Wed, 13 Jul 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</guid>
         
