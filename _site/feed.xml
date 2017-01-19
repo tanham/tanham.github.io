@@ -6,17 +6,130 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Jan 2017 19:19:57 -0500</pubDate>
-    <lastBuildDate>Wed, 11 Jan 2017 19:19:57 -0500</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 22:38:05 -0500</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 22:38:05 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Three Javascript Calculators</title>
-        <description>&lt;p&gt;&lt;em&gt;Project 52 - My bestfriend and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 1&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+        <title>Site Redesign, Part One</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My good friend &lt;a href=&quot;http://designxdesmond.com/&quot;&gt;Desmond&lt;/a&gt; and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 2&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;implemations-of-a-simple-js-calcuator&quot;&gt;3 Implemations of a simple JS Calcuator&lt;/h3&gt;
+&lt;p&gt;This week I began a site redesign and merge. I wanted to find a way combine my photo portfolio with my code blog. The entire project is split in two. This week I focused on design and planning and next week I will code the site.&lt;/p&gt;
+
+&lt;h3 id=&quot;objective&quot;&gt;Objective:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Come up with a design that accommodates my blog, code, and photography&lt;/li&gt;
+  &lt;li&gt;create digital wireframe&lt;/li&gt;
+  &lt;li&gt;gather content and assets&lt;/li&gt;
+  &lt;li&gt;plan for the second portion of the project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Here is a screenshot of the &lt;a href=&quot;https://xd.adobe.com/view/4c16a858-de09-45fc-a523-12f63a443153/&quot;&gt;digital wireframe&lt;/a&gt;:&lt;/em&gt;
+&lt;img src=&quot;/assets/screenshots/site-wireframe.png&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;project-2-checklist&quot;&gt;Project 2 checklist:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[X] gather and edit content&lt;/li&gt;
+  &lt;li&gt;[x] complete digital wire frame&lt;/li&gt;
+  &lt;li&gt;[x] chose prototype tools&lt;/li&gt;
+  &lt;li&gt;[ ] choose  css structure&lt;/li&gt;
+  &lt;li&gt;[ ] choose fonts, color, and write copy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;assets-and-content&quot;&gt;Assets and content&lt;/h3&gt;
+
+&lt;h4 id=&quot;code&quot;&gt;Code&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[x] js calculator
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/tanham/js-calculator&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://tanham.github.io/2017/01/11/three-javascript-calculators.html&quot;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://codepen.io/tanham2122/pen/pRyEEO&quot;&gt;live preview&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] wikipedia viewer
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/tanham/wiki-viewer&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://tanham.github.io/2016/12/07/building-a-wikipedia-viewer.html&quot;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://codepen.io/tanham2122/pen/yVpaQg&quot;&gt;live preview&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] Random Quote Generator
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/tanham/random-quote-gen&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://codepen.io/tanham2122/pen/WxzBgE&quot;&gt;live preview&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] Proxy Server
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/tanham/proxy-server&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] tic-tac-toe
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/tanham/tic-tac-toe&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;writing&quot;&gt;Writing&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[x] post about project 52&lt;/li&gt;
+  &lt;li&gt;[ ] travel post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;open-source-resources&quot;&gt;Open source resources:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lokesh/lightbox2&quot;&gt;photo light box&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kenwheeler/slick&quot;&gt;slick - photo carousel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/excellenteasy/grunt-image-resize&quot;&gt;grunt image resize&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;misc-things-to-figure-out&quot;&gt;Misc. things to figure out:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[ ] jekyll pretty urls&lt;/li&gt;
+  &lt;li&gt;[ ] custom urls&lt;/li&gt;
+  &lt;li&gt;[ ] jekyll categories and tags&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lessons-learned&quot;&gt;Lessons learned:&lt;/h3&gt;
+
+&lt;h4 id=&quot;using-adobe-xd-to-digital-wire-frame&quot;&gt;Using Adobe XD to digital wire frame&lt;/h4&gt;
+
+&lt;p&gt;This was my first experience with Adobe XD and I thought it was pleasant. I have some experience with other Adobe products but I am a novice. Adobe XD is very user-friendly with little learning curve. It made putting my sketch into life very easy and fun.&lt;/p&gt;
+
+&lt;h4 id=&quot;refactoring-code&quot;&gt;Refactoring code&lt;/h4&gt;
+
+&lt;p&gt;I revisited the some of the code of that I’ve done in the past so that I’d be happy with what I am displaying on my new site. Here is what I learned from refactoring code:&lt;/p&gt;
+
+&lt;h4 id=&quot;content-management-on-jekyll&quot;&gt;Content management (on Jekyll):&lt;/h4&gt;
+
+&lt;p&gt;My current photography is maintained on WordPress so the several gigs of photos I have are stored in a database.&lt;/p&gt;
+
+&lt;p&gt;Managing large files on Jekyll is different. Right now, while I don’t have many files, I can easily store photos at normal size in an assets folder in the project. I am still researching how to handle several large files in the future.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/2017/01/18/site-redesign,-part-one.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/01/18/site-redesign,-part-one.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Three Javascript Calculators</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My good friend &lt;a href=&quot;http://designxdesmond.com/&quot;&gt;Desmond&lt;/a&gt; and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 1&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;implementations-of-a-simple-js-calculator&quot;&gt;3 Implementations of a simple JS Calculator&lt;/h3&gt;
 
 &lt;h4 id=&quot;simple-js-calc-1&quot;&gt;Simple JS Calc 1&lt;/h4&gt;
 
@@ -27,22 +140,37 @@
 
 &lt;h4 id=&quot;simple-js-calc-2&quot;&gt;Simple JS Calc 2&lt;/h4&gt;
 
-&lt;p&gt;The next calculator uses a html form and only one JavaScript function. This calculator looks nicer to the user but the code is very ugly as it is also self-contained in one HTML document. This calulator also uses &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; events to fire a function.&lt;/p&gt;
+&lt;p&gt;The next calculator uses a HTML form and only one JavaScript function. This calculator looks nicer to the user but the code is very ugly as it is also self-contained in one HTML document. This calculator also uses &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; events to fire a function.&lt;/p&gt;
 
 &lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;xgVEGo&quot; data-default-tab=&quot;result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Simple JS Calculator 2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/tanham2122/pen/xgVEGo/&quot;&gt;Simple JS Calculator 2&lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;h4 id=&quot;simple-js-calc-3&quot;&gt;Simple JS Calc 3&lt;/h4&gt;
 
-&lt;p&gt;This is the best and most programatic version of the calulator I have so far. The code is clean and the interface looks good. (I found a calulator design online and tweaked in to my liking).&lt;/p&gt;
+&lt;p&gt;This is the best and most programmatic version of the calculator I have so far. The code is clean and the interface looks good. (I found a calculator design online and tweaked in to my liking).&lt;/p&gt;
 
 &lt;p&gt;I loop through the buttons to add an &lt;code class=&quot;highlighter-rouge&quot;&gt;onclick&lt;/code&gt; event for each. Within the loop there is a &lt;code class=&quot;highlighter-rouge&quot;&gt;switch&lt;/code&gt; that states the possibly cases and triggers a function based on what cases is being clicked.&lt;/p&gt;
 
-&lt;p&gt;There is one bug that I know of so far. Once an equation is calucated, you can continue to add number to the result. I will keep working on this.&lt;/p&gt;
+&lt;p&gt;There is one bug that I know of so far. Once an equation is calculated, you can continue to add number to the result. I will keep working on this.&lt;/p&gt;
 
 &lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;pRyEEO&quot; data-default-tab=&quot;result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Simple JS Calculator 3 &quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/tanham2122/pen/pRyEEO/&quot;&gt;Simple JS Calculator 3 &lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
+&lt;p&gt;Lessons learned:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Consistency - For me, consistency is so important to my continued growth. Even if I code just 30 minutes a everyday, the output and what I learn is so much more significant if I have gaps.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Seeing a project through - This project was something that I started about a month ago but got distracted and stopped working on it. It felt so good to complete this project. Seeing a project through gives you confidence that you know you can do it but more importantly you get a chance to experience all the challenges that come with that project and practice at debugging.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The importance of accountability - One of the main purposes for the Project 52 is to force accountability onto myself. If I had not agreed to this project with my friend Desmond I may have never finished this calculator project. I certainty would not have finished it this week. Now I am ready to move on to the next thing.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tanham/js-calculator&quot;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Jan 2017 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2017/01/11/three-javascript-calculators.html</link>
