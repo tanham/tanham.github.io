@@ -69,7 +69,7 @@ This week I began a site redesign and merge. I wanted to find a way combine my p
 #### Misc. things to figure out: 
 
 - [ ] jekyll pretty urls 
-- [ ] custom urls 
+- [ ] jekyll custom domain 
 - [ ] jekyll categories and tags 
 
 
@@ -82,6 +82,8 @@ This was my first experience with Adobe XD and I thought it was pleasant. I have
 #### Refactoring code 
 
 I revisited the some of the code of that I've done in the past so that I'd be happy with what I am displaying on my new site. Here is what I learned from refactoring code: 
+
+
 	
 #### Content management (on Jekyll):
 
