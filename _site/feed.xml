@@ -6,9 +6,72 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 22:38:05 -0500</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 22:38:05 -0500</lastBuildDate>
+    <pubDate>Thu, 23 Feb 2017 16:43:15 -0800</pubDate>
+    <lastBuildDate>Thu, 23 Feb 2017 16:43:15 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Date Generator</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My good friend &lt;a href=&quot;http://designxdesmond.com/&quot;&gt;Desmond&lt;/a&gt; and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 4&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I am four weeks late with this project due to travel and personal reasons. No excuses though! In the terms of our Project 52, we must pay $5 for each week we are late and make up for missed projects so I am adding 4 weeks to the end of the project.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;For the past few weeks, I have been working on a [romantic or friendly] date generator. I came up with this because I wanted to make plans to go out with a new friend but I was unsure of what they liked so I made a list of various activities and used a little JavaScript to allow a user to choose date activities based on their interests/budget/time.&lt;/p&gt;
+
+&lt;h4 id=&quot;first-implementation&quot;&gt;First Implementation:&lt;/h4&gt;
+
+&lt;p&gt;The first and easiest implementation I could think of was to create a array of date ideas and on the click of a button display a random activity. I used the built-in &lt;code class=&quot;highlighter-rouge&quot;&gt;Math&lt;/code&gt; object to return a random integer to randomly choose an activity on each click.&lt;/p&gt;
+
+&lt;p&gt;See first implementation below:&lt;/p&gt;
+
+&lt;p data-height=&quot;376&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;GrxzXr&quot; data-default-tab=&quot;result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Date-Gen-1&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/tanham2122/pen/GrxzXr/&quot;&gt;Date-Gen-1&lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;second-implementation&quot;&gt;Second Implementation:&lt;/h4&gt;
+
+&lt;p&gt;I wanted to add the option to choose a date by category or type. I made a button for each category and upon clicking, the user would get back results relevant to their choice.&lt;/p&gt;
+
+&lt;p&gt;Before I began to code this implementation, I put all the date ideas into spreadsheet, tagged with the different categories (i.e active, dinner, budget, etc.). I then coded a JSON object with each date idea and corresponding category and accessed the information with dot notation.&lt;/p&gt;
+
+&lt;p&gt;When I began writing the JavaScript for this project, I hard coded a JSON object that contained date ideas and their corresponding category. This was tedious and messy. I thought to myself, it would be cool it there are an API that allowed me to access my own data in the spreadsheet that I had.&lt;/p&gt;
+
+&lt;p&gt;So I Googled it and there it was. &lt;a href=&quot;http://airtable.com&quot;&gt;Airtable&lt;/a&gt; (the spreadsheet software I used) generates an API for each table you create. I am able to create, read, update, and destroy records using the Airtable API. So far I have made successful API calls and I have access to all of the date records that I input into the tables. The repository that contains the code for this app is private because I haven’t figured out how to hide my API key.&lt;/p&gt;
+
+&lt;p&gt;What is interesting about building this project is that is was a dance between how to structure the user interface with the functionality. I couldn’t dive into the code without considering the end user because I initially had little concept of what the user would need/want. For example, I tried to include a variety of budget options and activities of different time frames in each category.&lt;/p&gt;
+
+&lt;p&gt;Next week, I will share my progress on this app as well as a proper demo.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Feb 2017 00:00:00 -0800</pubDate>
+        <link>http://yourdomain.com/2017/02/02/date-generator.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/02/02/date-generator.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Site Redesign, Part Two</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My good friend &lt;a href=&quot;http://designxdesmond.com/&quot;&gt;Desmond&lt;/a&gt; and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 3&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This week I attempted to code the design I created for my new site. I ran into some issues along the way and I wanted to detail them here.&lt;/p&gt;
+
+&lt;p&gt;I started to prototype the design using &lt;a href=&quot;getbootstrap.com/&quot;&gt;bootstrap&lt;/a&gt;. When I laid the the basic structure down I realized I didn’t like the way it looked in the browser. I learned that my design in Adobe XD is in a different layout than the browse is so it does not look the same. The dimensions are feel too big for the browser and the layout seemed too spread out for the content that I have. Because I am not much of a designer, I think I should break this project down even further and enlist some help.&lt;/p&gt;
+
+&lt;p&gt;I decided to use SASS and &lt;a href=&quot;oocss.org/&quot;&gt;OOCSS&lt;/a&gt; for this project but I am still wrapping my head around how to structure my stylesheets.&lt;/p&gt;
+
+&lt;p&gt;My next steps for this project is to attempt a redesign with different dimensions, build out some of the features I want to include, and start thinking about how to structure stylesheets.&lt;/p&gt;
+
+&lt;p&gt;I will work on this redesign as an ongoing project instead of a weekly project.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+        <link>http://yourdomain.com/2017/01/25/site-redesign,-part-two.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/01/25/site-redesign,-part-two.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Site Redesign, Part One</title>
@@ -96,7 +159,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;[ ] jekyll pretty urls&lt;/li&gt;
-  &lt;li&gt;[ ] custom urls&lt;/li&gt;
+  &lt;li&gt;[ ] jekyll custom domain&lt;/li&gt;
   &lt;li&gt;[ ] jekyll categories and tags&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -116,7 +179,7 @@
 
 &lt;p&gt;Managing large files on Jekyll is different. Right now, while I don’t have many files, I can easily store photos at normal size in an assets folder in the project. I am still researching how to handle several large files in the future.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 18 Jan 2017 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 18 Jan 2017 00:00:00 -0800</pubDate>
         <link>http://yourdomain.com/2017/01/18/site-redesign,-part-one.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2017/01/18/site-redesign,-part-one.html</guid>
         
@@ -172,7 +235,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/tanham/js-calculator&quot;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 11 Jan 2017 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 -0800</pubDate>
         <link>http://yourdomain.com/2017/01/11/three-javascript-calculators.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2017/01/11/three-javascript-calculators.html</guid>
         
@@ -215,7 +278,7 @@
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 </description>
-        <pubDate>Wed, 07 Dec 2016 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 07 Dec 2016 00:00:00 -0800</pubDate>
         <link>http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</guid>
         
@@ -289,7 +352,7 @@
 &lt;p&gt;If you are interested in RC Start or RC Retreat, check them out &lt;a href=&quot;https://www.recurse.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 08 Sep 2016 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 08 Sep 2016 00:00:00 -0700</pubDate>
         <link>http://yourdomain.com/2016/09/08/my-rc-start-experience.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/09/08/my-rc-start-experience.html</guid>
         
@@ -353,7 +416,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 29 Aug 2016 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 -0700</pubDate>
         <link>http://yourdomain.com/2016/08/29/before-this-year-is-over.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/29/before-this-year-is-over.html</guid>
         
@@ -372,7 +435,7 @@
 
 &lt;p&gt;The search begins…&lt;/p&gt;
 </description>
-        <pubDate>Mon, 15 Aug 2016 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 -0700</pubDate>
         <link>http://yourdomain.com/2016/08/15/i-crave-community.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/15/i-crave-community.html</guid>
         
@@ -391,7 +454,7 @@
 
 &lt;p&gt;I think the right amount of community and self awareness pertaining to one’s learning style can save a ton of time and trouble learning.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 25 Jul 2016 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 25 Jul 2016 00:00:00 -0700</pubDate>
         <link>http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</link>
         <guid isPermaLink="true">http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</guid>
         
@@ -419,123 +482,9 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 22 Jul 2016 09:40:43 -0400</pubDate>
+        <pubDate>Fri, 22 Jul 2016 06:40:43 -0700</pubDate>
         <link>http://yourdomain.com/2016/07/22/blog-test.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/07/22/blog-test.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Code Goals</title>
-        <description>&lt;p&gt;I wanted to create a public record my goals and learning strategy to hold myself accountable and to share more of my journey. To help measure my progress I will keep this page active by adding links to my code and sharing adjustments that I make. Here are the 5 things that I am focusing on over the next three months:&lt;/p&gt;
-
-&lt;h3 id=&quot;building-stuff&quot;&gt;Building stuff&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This portfolio site&lt;/li&gt;
-  &lt;li&gt;CS50 psets
-    &lt;ul&gt;
-      &lt;li&gt;pset 0 - &lt;a href=&quot;https://scratch.mit.edu/projects/117240207/&quot;&gt;MIT Scratch project&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;pset 1 - &lt;a href=&quot;https://gist.github.com/tanham/0f614de419354df1afd946c57d480fe4&quot;&gt;Water&lt;/a&gt;, &lt;a href=&quot;https://gist.github.com/tanham/5cc739d58d8f3619177d8192fcbf3d19&quot;&gt;Mario&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;pset 2&lt;/li&gt;
-      &lt;li&gt;pset 3&lt;/li&gt;
-      &lt;li&gt;pset 4&lt;/li&gt;
-      &lt;li&gt;pset 5&lt;/li&gt;
-      &lt;li&gt;pset 6&lt;/li&gt;
-      &lt;li&gt;pset 7&lt;/li&gt;
-      &lt;li&gt;pset 8&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;fCC projects
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://codepen.io/tanham2122/pen/WxzBgE&quot;&gt;Random Quote Generator&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Local Weather App&lt;/li&gt;
-      &lt;li&gt;Wikipedia Viewer&lt;/li&gt;
-      &lt;li&gt;Twitch.tv JSON api&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;CSS animation&lt;/li&gt;
-  &lt;li&gt;Vanilla Javascript features&lt;/li&gt;
-  &lt;li&gt;Jekyll themes&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://codepen.io/collection/XRRQzY/&quot;&gt;Codepen reference pens&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tanham21.github.io/js-rocket/rocket.html&quot;&gt;JS Rocket&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;deep-learning-front-end-resources&quot;&gt;Deep Learning (Front-end Resources)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.edx.org/&quot;&gt;edX CS50&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.freecodecamp.com/tanham21&quot;&gt;freeCodeCamp&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.ecmascript.org/docs.php&quot;&gt;EMCAscript standard&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/frontendmasters/front-end-handbook/details&quot;&gt;Front End Handbook pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;writing&quot;&gt;Writing&lt;/h3&gt;
-
-&lt;p&gt;I have a goal to post at least weekly to this blog. I’d like to write about things that I have learned, problems that I encounter and other tech related (and non-related) things.&lt;/p&gt;
-
-&lt;h3 id=&quot;community&quot;&gt;Community&lt;/h3&gt;
-
-&lt;p&gt;For the most part I am learning alone, just me and my computer. Because I am currently traveling, language barriers and location make it so I am rarely able to attend meetups or meet other Devs in real life. To hack this I am apart of a few online groups that focus on creating community for people like me. I am also apart of Recurse center’s &lt;a href=&quot;https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers&quot;&gt;RC start program&lt;/a&gt; so I have access to a mentor and that community.&lt;/p&gt;
-
-&lt;p&gt;I am still learning how to use these communities as resources and help wherever I can but I’d like to make this a big part of my learning and overall coding journey.&lt;/p&gt;
-
-&lt;h3 id=&quot;open-source&quot;&gt;Open Source&lt;/h3&gt;
-
-&lt;p&gt;I am very interested in Open Source. I’ve already benefited tremendously from OSS and I would like to contribute. I believe in making technology accessible and I think it is a great way to give back to a community that has already taught me so much. Over the next three months I will pick an open source project to contribute to regularly. I will updated this post with my progress.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2016/07/18/code-goals.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/18/code-goals.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Building This Jekyll Site</title>
-        <description>&lt;h3 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h3&gt;
-
-&lt;p&gt;Designing and building a new website for myself was the reason that I wanted to learn to code. I was so fed up with the free resources available to me (an at the time non-techie) and I wanted to learn to make my own website. I had no idea that I’d get so into it, but here I am.&lt;/p&gt;
-
-&lt;h3 id=&quot;wire-framing&quot;&gt;Wire framing&lt;/h3&gt;
-
-&lt;p&gt;I’m new to designing websites but I know what I like. I watched a few Youtube videos about wire framing, with hopes of understanding some of the thought processes behind the practice and what things to take note of in the beginning. I kept my eyes open as I perused the web for designs that I liked and then I sketched a several designs over a few days. I nixed most of my initial ideas (some that I still like) because I didn’t think I could get it to work in the browser or because they were just bad. At this point, many of my ideas are a remix of some of the things that I admire online.&lt;/p&gt;
-
-&lt;h3 id=&quot;prototyping-in-codepen&quot;&gt;Prototyping in Codepen&lt;/h3&gt;
-
-&lt;p&gt;I coded 3 iterations of my design in Codepen to prototype. I like Codepen for it’s auto preview feature. I thought it might be nice to immediately see how my code came to life - and it was. I chose to use Bootstrap to create my layout fast. Here is one iteration of the design:&lt;/p&gt;
-
-&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;vKJOzQ&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;tanham2122&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/tanham2122/pen/vKJOzQ/&quot;&gt;vKJOzQ&lt;/a&gt; by Tanisha Hampden (&lt;a href=&quot;http://codepen.io/tanham2122&quot;&gt;@tanham2122&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
-
-&lt;p&gt;I had plenty help every step of the way. For wire framing I watched a video from &lt;a href=&quot;https://www.youtube.com/watch?v=PQO47_AP6lo&quot;&gt;DevTip&lt;/a&gt; and bits and pieces from others to try to put myself on the right track.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://lilchen.com/blog/site-redesign-process/&quot;&gt;Lil Chen’s site redesign article&lt;/a&gt; was such a big help in having a peek into how someone more experienced may go about the process.&lt;/p&gt;
-
-&lt;p&gt;I also read about writing clean and modular code with &lt;a href=&quot;http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/&quot;&gt;BEM&lt;/a&gt; and &lt;a href=&quot;https://toddmotto.com/getting-started-with-object-orientated-css-oocss-creating-a-button-kit/&quot;&gt;OOCSS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://learnlayout.com/&quot;&gt;Learn layout&lt;/a&gt; was a good help for some CSS refreshers.&lt;/p&gt;
-
-&lt;p&gt;Oh and &lt;a href=&quot;http://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp&quot;&gt;Minimum viable product&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I can’t say that I have hard fast followed any of these things. I have to remind myself of the things that I learn and want to adopt at every turn but they serve as good jumping off points. I will say that at some point I had to stop trying to take advice and just code. The resources were great to get me started but I had to dig in before analysis paralysis set in.&lt;/p&gt;
-
-&lt;h3 id=&quot;enter-jekyll&quot;&gt;Enter Jekyll&lt;/h3&gt;
-
-&lt;p&gt;I downloaded and ran Jekyll for the first time with the help of their amazing &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;documentation&lt;/a&gt;. I decided to use the default Jekyll theme as a starting point. I ran into several problems that I am still working out and in retrospect I should have began with a clean slate but working the kinks was a tremendous learning experience.&lt;/p&gt;
-
-&lt;p&gt;One problem that I had was using vanilla CSS instead of Sass. The default Jekyll theme comes with Sass styling. I pasted my CSS into a new file and added to the project - the Sass styling and my CSS was competing with each other. I liked some of the Sass styling but I ended up deleting the entire Sass files so I can have full control.&lt;/p&gt;
-
-&lt;p&gt;I am still learning Jekyll and I’m constantly amazed by how powerful it is. My design and overall website will continue to evolve as I learn and experiment more.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 13 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/13/building-this-jekyll-site.html</guid>
         
         
       </item>
