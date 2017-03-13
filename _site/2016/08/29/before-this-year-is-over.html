@@ -21,7 +21,18 @@
   <body>
 
 
-    <!--add hamburber style menu for mobile-->
+    <!-- facebook SDK  -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=194773364343194";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- end facebook SDK  -->
+
+<!--add hamburber style menu for mobile-->
 
 <div class="navbar">
 
@@ -40,7 +51,7 @@
         </div>
     </nav>
 
-<script type="text/javascript">   
+<script type="text/javascript">
   colorLinks("#8912FF");
 
   function colorLinks(hexColor)
@@ -50,11 +61,12 @@
       {
           if(links[i].href)
           {
-              links[i].style.color = hexColor;  
+              links[i].style.color = hexColor;
           }
-      }  
+      }
   }
   </script>
+
 
     <div class="content">
      
@@ -63,7 +75,7 @@
 
 	  <header class="post-header">
 	    <h1 class="post-title" itemprop="name headline">Before This Year is Over</h1>
-	    <p class="post-meta"><time datetime="2016-08-29T00:00:00-07:00" itemprop="datePublished">Aug 29, 2016</time></p>
+	    <p class="post-meta"><time datetime="2016-08-29T00:00:00-04:00" itemprop="datePublished">Aug 29, 2016</time></p>
 
 	    <p class="reading-time"> est. read time:  <span class="reading-time" title="Estimated read time">
   

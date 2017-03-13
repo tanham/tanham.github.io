@@ -6,9 +6,80 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Feb 2017 08:27:09 -0800</pubDate>
-    <lastBuildDate>Fri, 24 Feb 2017 08:27:09 -0800</lastBuildDate>
+    <pubDate>Mon, 13 Mar 2017 10:12:18 -0400</pubDate>
+    <lastBuildDate>Mon, 13 Mar 2017 10:12:18 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Social Media Feed Drupal 7</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My good friend &lt;a href=&quot;http://designxdesmond.com/&quot;&gt;Desmond&lt;/a&gt; and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 5&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I am a few weeks late with this project due to travel and personal reasons. No excuses though! In the terms of our Project 52, we must pay $5 for each week we are late and make up for missed projects.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I am currently working with Drupal 7 for client work and a task that I had to overcome was embedding social media feeds into a Drupal 7 site. The client asked for Facebook, Twitter, and Instagram feeds. Below I will go over how I went about this.&lt;/p&gt;
+
+&lt;p&gt;There were several Drupal modules that will add feeds to your Drupal site but I found many of them overly complex to configure and very dependency heavy. I tried to do as much as I can by simple adding blocks but in the end I did make use of one module.&lt;/p&gt;
+
+&lt;h3 id=&quot;facebook-feed-embed&quot;&gt;Facebook feed embed&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://developers.facebook.com/docs/plugins/page-plugin&quot;&gt;Facebook for developers&lt;/a&gt; page has a wizard that allows you to choose various attributes like width, height, and styles for your embed and it spits out two pieces of code. The first is a Javascript SDK to be placed right after &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tag of you site. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Javascript&quot;&gt;&amp;lt;div id=&quot;fb-root&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;gt;(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;amp;version=v2.8&amp;amp;appId=194773364343194&quot;;
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Drupal, I had to place this code in html.tpl.php file. I found this file in the modules/system directory. I believe the file may be different and in a different location based on what theme you are using so you may have to do some digging.&lt;/p&gt;
+
+&lt;p&gt;An aside: If I wanted to embed this into my Jekyll site, I could put the Javascript SDK at the top of my header.html include page so that is available everywhere on the site.&lt;/p&gt;
+
+&lt;p&gt;The second piece of code output the actual Facebook embed and should be placed wherever you want your embed to appear on your site. The code looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fb-page&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.facebook.com/facebook&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-tabs=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;timeline&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;220&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-small-header=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-adapt-container-width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-hide-cover=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-show-facepile=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;blockquote&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;cite=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.facebook.com/facebook&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fb-xfbml-parse-ignore&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.facebook.com/facebook&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Facebook&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here is an example of the output:&lt;/p&gt;
+
+&lt;div class=&quot;fb-page&quot; data-href=&quot;https://www.facebook.com/facebook&quot; data-tabs=&quot;timeline&quot; data-width=&quot;220&quot; data-small-header=&quot;false&quot; data-adapt-container-width=&quot;true&quot; data-hide-cover=&quot;false&quot; data-show-facepile=&quot;true&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/facebook&quot; class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;a href=&quot;https://www.facebook.com/facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;An extra - Facebook debugger - A nice tool to make use of when embed facebook plugins to your websites is the &lt;a href=&quot;https://developers.facebook.com/tools/debug/&quot;&gt;Facebook debugger&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;twitter-feed-embed&quot;&gt;Twitter feed embed&lt;/h3&gt;
+
+&lt;p&gt;Twitter also has a &lt;a href=&quot;https://publish.twitter.com/#&quot;&gt;simple wizard&lt;/a&gt; to help generate a feed embed code. They include feed template examples and a custom generator where you enter the user timeline URL, style, and add other custom settings to generate the code. The code and output are below:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;twitter-timeline&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;220&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://twitter.com/TwitterDev&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Tweets by TwitterDev&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//platform.twitter.com/widgets.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&quot;twitter-timeline&quot; data-width=&quot;220&quot; data-height=&quot;400&quot; href=&quot;https://twitter.com/TwitterDev&quot;&gt;Tweets by TwitterDev&lt;/a&gt; &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Twitter also has a debugger tool called the &lt;a href=&quot;https://cards-dev.twitter.com/validator&quot;&gt;card validator&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;instagram-feed-embed&quot;&gt;Instagram feed embed&lt;/h3&gt;
+
+&lt;p&gt;Instagram was a little more involved. To generate a feed, I had to get access to Instagram’s API and generate an access token. You can embed single images by using the embed code that is provided with each image under more options but if you want a feed from Instagram, you have to take a few extra steps. I used a Drupal module called Drupal &lt;a href=&quot;https://www.drupal.org/project/instagram_block&quot;&gt;Instagram Block&lt;/a&gt; to create a feed. Please note that there are several other modules and methods but this is what I chose.&lt;/p&gt;
+
+&lt;p&gt;To begin, head over to the &lt;a href=&quot;https://www.instagram.com/developer/&quot;&gt;Instagram developers page&lt;/a&gt; to register. Once you register, you will be given a client id and client secret code. You can use this information to generate an access token. I followed &lt;a href=&quot;https://medium.com/@bkwebster/how-to-get-instagram-api-access-token-and-fix-your-broken-feed-c8ad470e3f02#.1q8e3o4d5&quot;&gt;this tutorial&lt;/a&gt;. Basically, you will start a local server to gain access to the API and authorize it with your client id to return a response which will be your access token. You can also so this with terminal using &lt;code class=&quot;highlighter-rouge&quot;&gt;cURL&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;One you have you access token, you can use it to configure the Instagram Block module and embed you feed.&lt;/p&gt;
+
+&lt;p&gt;The Instagram feed that Instagram Block create needs some styling but it does the job as far as functionality.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Mar 2017 00:00:00 -0400</pubDate>
+        <link>http://yourdomain.com/2017/03/13/social-media-feed-drupal-7.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/03/13/social-media-feed-drupal-7.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Date Generator</title>
@@ -43,7 +114,7 @@
 
 &lt;p&gt;Next week, I will share my progress on this app as well as a proper demo.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 02 Feb 2017 00:00:00 -0800</pubDate>
+        <pubDate>Thu, 02 Feb 2017 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2017/02/02/date-generator.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2017/02/02/date-generator.html</guid>
         
@@ -66,7 +137,7 @@
 
 &lt;p&gt;I will work on this redesign as an ongoing project instead of a weekly project.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 25 Jan 2017 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2017/01/25/site-redesign,-part-two.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2017/01/25/site-redesign,-part-two.html</guid>
         
@@ -179,7 +250,7 @@
 
 &lt;p&gt;Managing large files on Jekyll is different. Right now, while I don’t have many files, I can easily store photos at normal size in an assets folder in the project. I am still researching how to handle several large files in the future.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 18 Jan 2017 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 18 Jan 2017 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2017/01/18/site-redesign,-part-one.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2017/01/18/site-redesign,-part-one.html</guid>
         
@@ -235,7 +306,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/tanham/js-calculator&quot;&gt;Github Repo&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 11 Jan 2017 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2017/01/11/three-javascript-calculators.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2017/01/11/three-javascript-calculators.html</guid>
         
@@ -278,7 +349,7 @@
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 </description>
-        <pubDate>Wed, 07 Dec 2016 00:00:00 -0800</pubDate>
+        <pubDate>Wed, 07 Dec 2016 00:00:00 -0500</pubDate>
         <link>http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/12/07/building-a-wikipedia-viewer.html</guid>
         
@@ -352,7 +423,7 @@
 &lt;p&gt;If you are interested in RC Start or RC Retreat, check them out &lt;a href=&quot;https://www.recurse.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 08 Sep 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 08 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/09/08/my-rc-start-experience.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/09/08/my-rc-start-experience.html</guid>
         
@@ -416,7 +487,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 29 Aug 2016 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/08/29/before-this-year-is-over.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/29/before-this-year-is-over.html</guid>
         
@@ -435,7 +506,7 @@
 
 &lt;p&gt;The search begins…&lt;/p&gt;
 </description>
-        <pubDate>Mon, 15 Aug 2016 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2016/08/15/i-crave-community.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/15/i-crave-community.html</guid>
         
@@ -454,38 +525,12 @@
 
 &lt;p&gt;I think the right amount of community and self awareness pertaining to one’s learning style can save a ton of time and trouble learning.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 25 Jul 2016 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 25 Jul 2016 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</link>
         <guid isPermaLink="true">http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</guid>
         
         
         <category>code</category>
-        
-      </item>
-    
-      <item>
-        <title>Blog Test!</title>
-        <description>&lt;p&gt;This is a test.&lt;/p&gt;
-
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 22 Jul 2016 06:40:43 -0700</pubDate>
-        <link>http://yourdomain.com/2016/07/22/blog-test.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/07/22/blog-test.html</guid>
-        
         
       </item>
     

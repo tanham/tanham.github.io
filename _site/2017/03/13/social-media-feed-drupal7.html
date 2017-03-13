@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>My RC Start Experience</title>
-  <meta name="description" content="What is RC Start?">
+  <title>Social Media Feed Drupal7</title>
+  <meta name="description" content="Project 52 - My good friend Desmond and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold ...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/2016/09/08/my-rc-start-experience.html">
+  <link rel="canonical" href="http://yourdomain.com/2017/03/13/social-media-feed-drupal7.html">
   <link rel="alternate" type="application/rss+xml" title="Tanisha Hampden" href="http://yourdomain.com/feed.xml">
   <!--Bootstrap-->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -74,13 +74,13 @@
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 	  <header class="post-header">
-	    <h1 class="post-title" itemprop="name headline">My RC Start Experience</h1>
-	    <p class="post-meta"><time datetime="2016-09-08T00:00:00-04:00" itemprop="datePublished">Sep 8, 2016</time></p>
+	    <h1 class="post-title" itemprop="name headline">Social Media Feed Drupal7</h1>
+	    <p class="post-meta"><time datetime="2017-03-13T00:00:00-04:00" itemprop="datePublished">Mar 13, 2017</time></p>
 
 	    <p class="reading-time"> est. read time:  <span class="reading-time" title="Estimated read time">
   
   
-    5 minutes
+    3 minutes
   
 </span>
 
@@ -91,70 +91,45 @@
 	  </header>
 <hr>
 	  <div class="post-content" itemprop="articleBody">
-	    <h2 id="what-is-rc-start">What is RC Start?</h2>
+	    <p><em>Project 52 - My good friend <a href="http://designxdesmond.com/">Desmond</a> and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. <strong>This is week 5</strong>.</em></p>
 
-<p>Recurse Center describes <a href="https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers">RC Start</a> as an experiment that “offers one-on-one advice from members of the Recurse Center community”. If you are selected for RC Start, you’ll get three 45-minute one-on-one sessions with an RC alum(in-person or video chat) and access to the RC Start community through a private forum (check out the link for more specifics).</p>
+<p><em>I am a few weeks late with this project due to travel and personal reasons. No excuses though! In the terms of our Project 52, we must pay $5 for each week we are late and make up for missed projects.</em></p>
 
-<h2 id="why-did-i-apply">Why did I apply?</h2>
+<hr />
 
-<p>When I came across Recurse Center and RC Start, I had just started to become serious about teaching myself to code. I fell in love with RC’s mission and description of community and I immediately wanted to be apart of it. I had no previous coding background but I was eager to learn and I knew that having a mentor could help answer some of the questions that I’d been stuck on and help point me in the right direction. RC Start seemed like the perfect program from me.</p>
+<p>I am currently learning Drupal 7 for client work and a task that I had to overcome was embedding social media feeds into the Drupal.</p>
 
-<h2 id="what-were-the-one-on-one-sessions-like">What were the one-on-one sessions like?</h2>
+<p>The client asked for Facebook, Twitter, and Instagram feeds. Below I will go over how I went about this.</p>
 
-<p>As I understand it, every RC Start experience is different based on schedules and other factors so my experience may not look like anyone else’s. Because I’ve been nomadic, I was paired with a remote mentor. When I began the program I was in Italy and my mentor was based in Singapore. Throughout the program, I went from Italy to France to Ireland so we always had a 6 or 7 hour time difference. This was not a  problem because I was flexible and she gave me plenty of options to meet. Our sessions were a bit spaced out for scheduling reasons but also to give me time in-between to implement what we talked about and learn on my own. In between each session, my mentor sent me resources and I sent her updates on my progress.</p>
+<p>There were several Drupal 7 modules that adds icons and feeds to your Drupal site but I found many of them overly complex to configure and very dependency heavy. I tried to do as much as I can by simple adding blocks but in the end I did make use of one module.</p>
 
-<p>We had 4 sessions total (1 intro and 3 official). Leading up to each session, I made notes about what I wanted to ask and/or work on.</p>
+<p>Facebook</p>
 
-<h4 id="introductory-session---june-11th-2016">Introductory Session - June 11th, 2016</h4>
+<p>The <a href="https://developers.facebook.com/docs/plugins/page-plugin">Facebook for developers</a> page has a wizard where you can choose various attributes like width, height, and styles of your embed and it spits out two pieces of code. The first is a Javascript SDK to be placed right after <code class="highlighter-rouge">&lt;body&gt;</code> tag. It looks like this:</p>
 
-<p>During this first session we learned a bit about one another, talked about what I have been working on and what I wanted out of our sessions. It was a great start to our journey.</p>
+<pre><code class="language-Javascript">&lt;div id="fb-root"&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&amp;appId=194773364343194";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
+</code></pre>
 
-<h4 id="session-1---june-26th-2016">Session 1 - June 26th, 2016</h4>
+<p>In Drupal, I had to place this code in html.tpl.php file. I found this file in the modules/system directory. I believe the file may be different based on what theme you are using so you may have to do some digging.</p>
 
-<p>During our first official session she did a code review of my portfolio code, talked about DOM manipulation, and briefly talked about making art with code. She suggested that I look into image processing and other generative art because of my photography background. She also suggested Jekyll for my portfolio and urged me to get it online using gh-pages for practice with git.</p>
+<p>An aside: If I wanted to embed this into my Jekyll site, I could put the Javascript SDK at the top of my header.html include page so that is available everywhere on the site.</p>
 
-<p>Incidentally, I learned how to use ‘ping’ using the terminal because our connection was lost a few times.</p>
+<p>The second piece of code output the actual Facebook embed and should be placed wherever you want your embed to appear on your site. The code looks like this:</p>
 
-<h4 id="session-2---july-19-2016">Session 2 - July 19, 2016</h4>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fb-page"</span> <span class="na">data-href=</span><span class="s">"https://www.facebook.com/facebook"</span> <span class="na">data-tabs=</span><span class="s">"timeline"</span> <span class="na">data-width=</span><span class="s">"220"</span> <span class="na">data-small-header=</span><span class="s">"false"</span> <span class="na">data-adapt-container-width=</span><span class="s">"true"</span> <span class="na">data-hide-cover=</span><span class="s">"false"</span> <span class="na">data-show-facepile=</span><span class="s">"true"</span><span class="nt">&gt;&lt;blockquote</span> <span class="na">cite=</span><span class="s">"https://www.facebook.com/facebook"</span> <span class="na">class=</span><span class="s">"fb-xfbml-parse-ignore"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.facebook.com/facebook"</span><span class="nt">&gt;</span>Facebook<span class="nt">&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;</span>
+</code></pre>
+</div>
 
-<p>Leading up to this session I wrote up my learning priorities and a list of specific questions about what I had been working on.</p>
+<p>Here is an example of the output:</p>
 
-<p>For most of this session we used screen sharing to walk through building a JavaScript carousel and she showed me examples of DOM Manipulation using JavaScript. This was the most helpful session up until this point. Hearing her talk through why she did certain things and about how she thought about the code solidified some of my understanding.</p>
-
-<p>After this session I began building my own small JavaScript projects and finding real-world applications for the scripts that I was learning.</p>
-
-<p>In addition, we talked about:</p>
-
-<ul>
-  <li>my newly published Jekyll site and issues I had faced</li>
-  <li>open source</li>
-  <li>Git and Github (writing proper commit messages, git commands, etc.)</li>
-  <li>setting up a local server</li>
-</ul>
-
-<h4 id="session-3---september-6th-2016">Session 3 - September 6th, 2016</h4>
-
-<p>During our final session, we pair programmed on my local weather app. With my mentor’s help, I changed 2 jQuery scripts to plain JavaScript. In the process she also showed me several debugging techniques.</p>
-
-<p>This time, pairing showed me that I need to work on communicating more clearly (out loud and in real-time) what I am coding and what I don’t understand. This skill is necessary when working in groups.</p>
-
-<p>This was such a valuable experience and I can’t wait to pair more with other people.</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>The experience was overwhelmingly positive. I really loved my mentor and learned a ton from her.</p>
-
-<p>In retrospect, I would have down a few things differently:</p>
-
-<ol>
-  <li>been more active within the RC Start community (in the community forum)</li>
-  <li>asked more questions in between sessions</li>
-  <li>paired on all 3 sessions</li>
-  <li>asked for more code reviews and specific feedback</li>
-</ol>
-
-<p>If you are interested in RC Start or RC Retreat, check them out <a href="https://www.recurse.com/">here</a>.</p>
-
+<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="220" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 
 	  </div>
 

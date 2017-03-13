@@ -22,7 +22,18 @@
   <body>
 
 
-    <!--add hamburber style menu for mobile-->
+    <!-- facebook SDK  -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=194773364343194";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- end facebook SDK  -->
+
+<!--add hamburber style menu for mobile-->
 
 <div class="navbar">
 
@@ -41,7 +52,7 @@
         </div>
     </nav>
 
-<script type="text/javascript">   
+<script type="text/javascript">
   colorLinks("#8912FF");
 
   function colorLinks(hexColor)
@@ -51,11 +62,12 @@
       {
           if(links[i].href)
           {
-              links[i].style.color = hexColor;  
+              links[i].style.color = hexColor;
           }
-      }  
+      }
   }
   </script>
+
 
     <div class="content">
      
@@ -66,9 +78,9 @@
       <div class="about">
           <img src="http://i1.wp.com/tanishahampden.com/wp-content/uploads/2015/02/img1.jpg?w=1500">
 
-          <p>I make things with <a href="http://tanishahampden.com/art/">cameras</a>, <a href="https://tanham.github.io/index.html">words</a>, and <a href="https://github.com/tanham">code</a>. I am interested in storytelling, travel, and self-improvement. I've just concluded a year-long journey through Europe and Vietnam, respectively. While traveling I spent my time thinking, writing and learning to code. Have a look at what I am currently <a href="now.html">working on</a>.</p>
+          <p>I make things with <a href="http://tanishahampden.com/art/">cameras</a>, words, and <a href="https://github.com/tanham">code</a>. I am interested in storytelling, travel, and self-improvement. I've just concluded a year-long journey through Europe and Vietnam, respectively. While traveling I spent my time thinking, writing and learning to code. Have a look at what I am currently <a href="now.html">working on</a>.</p>
 
-          <p>I have an educational background in Sociology and I am currently interested in using code and data to better frame and possibly answer big questions for (i.e. income inequality). I also have interests in writing software that automates everyday tasks and collects and analyzes personal data, product design, and open source software.</p>
+          <p>I have an educational background in Sociology and I am currently interested in using code and data to better frame and answer big questions (i.e. income inequality). I also have interests in writing software that automates everyday tasks and collects and analyzes personal data, product design, and open source software.</p>
         </div>
 
     
