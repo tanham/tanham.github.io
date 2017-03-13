@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Social Media Feeds Drupal 7</title>
+  <meta name="description" content="Project 52 - My good friend Desmond and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold ...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/2017/03/13/social-media-feeds-drupal-7.html">
+  <link rel="alternate" type="application/rss+xml" title="Tanisha Hampden" href="http://yourdomain.com/feed.xml">
+  <!--Bootstrap-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ <!--font awesome-->
+ <script src="https://use.fontawesome.com/4b0263fec7.js"></script>
+</head>
+
+
+  <body>
+
+
+    <!-- facebook SDK  -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=194773364343194";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- end facebook SDK  -->
+
+<!--add hamburber style menu for mobile-->
+
+<div class="navbar">
+
+    <nav class="navbar-default">
+      <div class="container">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/index.html">{T|H}</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.html">blog</a></li>
+            <li><a href="/about.html">about</a></li>
+            <li><a href="/now.html">now</a></li>
+
+          </ul>
+        </div>
+    </nav>
+
+<script type="text/javascript">
+  colorLinks("#8912FF");
+
+  function colorLinks(hexColor)
+  {
+      var links = document.getElementsByTagName("a");
+      for(var i=0;i<links.length;i++)
+      {
+          if(links[i].href)
+          {
+              links[i].style.color = hexColor;
+          }
+      }
+  }
+  </script>
+
+
+    <div class="content">
+     
+        <div class="content">
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+	  <header class="post-header">
+	    <h1 class="post-title" itemprop="name headline">Social Media Feeds Drupal 7</h1>
+	    <p class="post-meta"><time datetime="2017-03-13T00:00:00-04:00" itemprop="datePublished">Mar 13, 2017</time></p>
+
+	    <p class="reading-time"> est. read time:  <span class="reading-time" title="Estimated read time">
+  
+  
+    5 minutes
+  
+</span>
+
+
+
+ </p>
+
+	  </header>
+<hr>
+	  <div class="post-content" itemprop="articleBody">
+	    <p><em>Project 52 - My good friend <a href="http://designxdesmond.com/">Desmond</a> and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. <strong>This is week 5</strong>.</em></p>
+
+<p><em>I am a few weeks late with this project due to travel and personal reasons. No excuses though! In the terms of our Project 52, we must pay $5 for each week we are late and make up for missed projects.</em></p>
+
+<hr />
+
+<p>I am currently working with Drupal 7 for client work and a task that I had to overcome was embedding social media feeds into a Drupal 7 site. The client asked for Facebook, Twitter, and Instagram feeds. Below I will go over how I went about this.</p>
+
+<p>There were several Drupal modules that will add feeds to your Drupal site but I found many of them overly complex to configure and very dependency heavy. I tried to do as much as I can by simple adding blocks but in the end I did make use of one module.</p>
+
+<h3 id="facebook-feed-embed">Facebook feed embed</h3>
+
+<p>The <a href="https://developers.facebook.com/docs/plugins/page-plugin">Facebook for developers</a> page has a wizard that allows you to choose various attributes like width, height, and styles for your embed and it spits out two pieces of code. The first is a Javascript SDK to be placed right after <code class="highlighter-rouge">&lt;body&gt;</code> tag of you site. It looks like this:</p>
+
+<pre><code class="language-Javascript">&lt;div id="fb-root"&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&amp;appId=194773364343194";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
+</code></pre>
+
+<p>In Drupal, I had to place this code in html.tpl.php file. I found this file in the modules/system directory. I believe the file may be different and in a different location based on what theme you are using so you may have to do some digging.</p>
+
+<p>An aside: If I wanted to embed this into my Jekyll site, I could put the Javascript SDK at the top of my header.html include page so that is available everywhere on the site.</p>
+
+<p>The second piece of code output the actual Facebook embed and should be placed wherever you want your embed to appear on your site. The code looks like this:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fb-page"</span> <span class="na">data-href=</span><span class="s">"https://www.facebook.com/facebook"</span> <span class="na">data-tabs=</span><span class="s">"timeline"</span> <span class="na">data-width=</span><span class="s">"220"</span> <span class="na">data-small-header=</span><span class="s">"false"</span> <span class="na">data-adapt-container-width=</span><span class="s">"true"</span> <span class="na">data-hide-cover=</span><span class="s">"false"</span> <span class="na">data-show-facepile=</span><span class="s">"true"</span><span class="nt">&gt;&lt;blockquote</span> <span class="na">cite=</span><span class="s">"https://www.facebook.com/facebook"</span> <span class="na">class=</span><span class="s">"fb-xfbml-parse-ignore"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.facebook.com/facebook"</span><span class="nt">&gt;</span>Facebook<span class="nt">&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>Here is an example of the output:</p>
+
+<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="220" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+
+<p><em>An extra - Facebook debugger - A nice tool to make use of when embed facebook plugins to your websites is the <a href="https://developers.facebook.com/tools/debug/">Facebook debugger</a>.</em></p>
+
+<h3 id="twitter-feed-embed">Twitter feed embed</h3>
+
+<p>Twitter also has a <a href="https://publish.twitter.com/#">simple wizard</a> to help generate a feed embed code. They include feed template examples and a custom generator where you enter the user timeline URL, style, and add other custom settings to generate the code. The code and output are below:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"twitter-timeline"</span> <span class="na">data-width=</span><span class="s">"220"</span> <span class="na">data-height=</span><span class="s">"400"</span> <span class="na">href=</span><span class="s">"https://twitter.com/TwitterDev"</span><span class="nt">&gt;</span>Tweets by TwitterDev<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"//platform.twitter.com/widgets.js"</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+</div>
+
+<p><a class="twitter-timeline" data-width="220" data-height="400" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p><em>Twitter also has a debugger tool called the <a href="https://cards-dev.twitter.com/validator">card validator</a></em></p>
+
+<h3 id="instagram-feed-embed">Instagram feed embed</h3>
+
+<p>Instagram was a little more involved. To generate a feed, I had to get access to Instagram’s API and generate an access token. You can embed single images by using the embed code that is provided with each image under more options but if you want a feed from Instagram, you have to take a few extra steps. I used a Drupal module called Drupal <a href="https://www.drupal.org/project/instagram_block">Instagram Block</a> to create a feed. Please note that there are several other modules and methods but this is what I chose.</p>
+
+<p>To begin, head over to the <a href="https://www.instagram.com/developer/">Instagram developers page</a> to register. Once you register, you will be given a client id and client secret code. You can use this information to generate an access token. I followed <a href="https://medium.com/@bkwebster/how-to-get-instagram-api-access-token-and-fix-your-broken-feed-c8ad470e3f02#.1q8e3o4d5">this tutorial</a>. Basically, you will start a local server to gain access to the API and authorize it with your client id to return a response which will be your access token. You can also so this with terminal using <code class="highlighter-rouge">cURL</code>.</p>
+
+<p>One you have you access token, you can use it to configure the Instagram Block module and embed you feed.</p>
+
+<p>The Instagram feed that Instagram Block create needs some styling but it does the job as far as functionality.</p>
+
+	  </div>
+
+	</article>
+</div>
+
+
+    
+    </div>
+  
+    <div class="right-sidebar">
+      
+    </div>
+    
+
+     <!-- Extend footer across width of page, color, troubleshoot FA icons -->    
+      
+
+      <footer class="site-footer">
+        <div class="wrapper">
+          <div class="col-md-6 copyright">
+            <p>This is a blog and portfolio by Tanisha Hampden. This Jekyll site was built with love, Sublime 2, and bootstrap.</p>
+
+            <p>All Right Reserved. Copyright &copy; Tanisha Hampden 2016.</p>
+
+          </div>
+
+          <div class="col-md-6" id="contact">
+            <a href="https://github.com/tanham">
+              <i class="fa fa-github fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+          
+            <a href="https://twitter.com/tanham_io">
+              <i class="fa fa-twitter fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+         
+            <a href="https://www.instagram.com/tanham.io/">
+              <i class="fa fa-instagram fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/tanisha-hampden-53b74634">
+              <i class="fa fa-linkedin fa-1x fa-border " aria-hidden="true "></i>
+            </a>
+          </div>
+          </div>
+      </footer>
+
+
+
+
+
+<!--
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Tanisha Hampden</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Tanisha Hampden</li>
+          <li><a href="mailto:tanishahampden@gmail.com">tanishahampden@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/tanham"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">tanham</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/tanishahampden"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">tanishahampden</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is a blog and portfolio by me. 
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+-->
+
+
+    
+
+  </body>
+
+</html>
