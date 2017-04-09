@@ -6,9 +6,42 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Mar 2017 10:16:47 -0400</pubDate>
-    <lastBuildDate>Mon, 13 Mar 2017 10:16:47 -0400</lastBuildDate>
+    <pubDate>Wed, 15 Mar 2017 15:28:35 -0400</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2017 15:28:35 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Working With Google Time Zone Api</title>
+        <description>&lt;p&gt;&lt;em&gt;Project 52 - My good friend &lt;a href=&quot;http://designxdesmond.com/&quot;&gt;Desmond&lt;/a&gt; and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. &lt;strong&gt;This is week 6&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I am a few weeks late with this project due to travel and personal reasons. No excuses though! In the terms of our Project 52, we must pay $5 for each week we are late and make up for missed projects.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I am working on a World Clock app and the first step was to get access to Google’s Time Zone API.&lt;/p&gt;
+
+&lt;p&gt;The Google docs state “The Google Maps Time Zone API provides a simple interface to request the time zone for a location on the earth, as well as that location’s time offset from UTC.”&lt;/p&gt;
+
+&lt;p&gt;To access the API I used a plain javascript helper function to make an API call:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getCORS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;withCredentials&#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XDomainRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// fix IE8/9&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;GET&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;When I call the function I used a custom url that I built by concatenating the base url, the latitude and longitude coordinates, and the api key.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Mar 2017 00:00:00 -0400</pubDate>
+        <link>http://yourdomain.com/2017/03/13/working-with-google-time-zone-api.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/03/13/working-with-google-time-zone-api.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Social Media Feeds Drupal 7</title>
@@ -510,27 +543,6 @@
         <link>http://yourdomain.com/2016/08/15/i-crave-community.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/08/15/i-crave-community.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>Hacking my learning</title>
-        <description>&lt;p&gt;I had to hack my learning. Over the past few weeks, I found that I wasn’t picking up JavaScript as well as I’d like with fCC. I got bored with tutorials and I figured out a pattern to solving problems by imitation rather then thinking through it. I am naturally a corner cutter and so without the fundamental understanding I flew through the material with patterns I picked up solving the easy stuff. For me to understand something I have to dig into what’s under the hood.&lt;/p&gt;
-
-&lt;p&gt;In addition to fCC, I tried Codecademy, reading JavaScript books, looking at MDN and other online resources. Some stuff was boring and other stuff was incredibly dense.&lt;/p&gt;
-
-&lt;p&gt;I recently had an ‘aha’ moment when my RC start mentor walked me through building a JavaScript image slider using Codepen and screen-casting. As she built the slider, I listened to her talk her way through why she did things. I am comfortable with JavaScript syntax but I usually get caught up in thinking computationally. It helped so much to hear her talk through her process.&lt;/p&gt;
-
-&lt;p&gt;So now I am beginning to understand what’s most important to my learning. I need a fundamental understanding of concepts and I need interactive examples.&lt;/p&gt;
-
-&lt;p&gt;I think the right amount of community and self awareness pertaining to one’s learning style can save a ton of time and trouble learning.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 25 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/code/2016/07/25/hacking-my-learning.html</guid>
-        
-        
-        <category>code</category>
         
       </item>
     

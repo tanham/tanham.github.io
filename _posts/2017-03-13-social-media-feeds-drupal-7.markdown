@@ -2,14 +2,7 @@
 layout: post
 Title: "Social Media feeds for Drupal 7"
 date: 2017-03-13
-Category: Project 52
 ---
-
-*Project 52 - My good friend [Desmond](http://designxdesmond.com/) and I are doing a project 52 where each of us complete a project in our respective fields to sharpen our skills and hold each other accountable. **This is week 5**.*
-
-*I am a few weeks late with this project due to travel and personal reasons. No excuses though! In the terms of our Project 52, we must pay $5 for each week we are late and make up for missed projects.*
-
-***
 
 I am currently working with Drupal 7 for client work and a task that I had to overcome was embedding social media feeds into a Drupal 7 site. The client asked for Facebook, Twitter, and Instagram feeds. Below I will go over how I went about this.
 
@@ -66,4 +59,4 @@ To begin, head over to the [Instagram developers page](https://www.instagram.com
 
 One you have you access token, you can use it to configure the Instagram Block module and embed you feed.
 
-The Instagram feed that Instagram Block create needs some styling but it does the job as far as functionality. 
+The Instagram feed that Instagram Block create needs some styling but it does the job as far as functionality.
